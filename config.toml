@@ -1,4 +1,4 @@
-base_url = "https://fornjot.pages.dev/"
+base_url = "https://www.fornjot.app/"
 
 compile_sass       = true
 build_search_index = false
