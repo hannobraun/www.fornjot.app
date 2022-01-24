@@ -143,3 +143,32 @@ form.newsletter {
         }
     }
 }
+
+ol.blog {
+    list-style-type: none;
+    padding:         0;
+
+    li time {
+        font-weight: bold;
+    }
+}
+
+article.blog-post {
+    header {
+        h2 {
+            margin-bottom: 0;
+        }
+
+        > span {
+            font-size: 85%;
+
+            time {
+                font-weight: bold;
+            }
+        }
+    }
+
+    h3 {
+        margin-top: $margin-wide;
+    }
+}

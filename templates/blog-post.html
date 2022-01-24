@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block main %}
+    <article class="blog-post">
+        <header>
+            <h2>{{ page.title }}</h2>
+            <span>
+                Posted on <time datetime="{{ page.date }}">{{ page.date }}</time> by <a href="https://github.com/hannobraun">Hanno Braun</a>
+            </span>
+        </header>
+
+        {{ page.content | safe }}
+    </article>
+{% endblock %}

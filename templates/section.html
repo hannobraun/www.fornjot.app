@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block main %}
+    <h2>{{ section.title }}</h2>
+
+    {{ section.content | safe }}
+
+    <ol class="blog">
+        {% for page in section.pages %}
+            <li>
+                <time datetime="{{ page.date }}">{{ page.date }}</time>:
+                <a href="{{ page.path }}">{{ page.title }}</a>
+            </li>
+        {% endfor %}
+    </ol>
+{% endblock %}
