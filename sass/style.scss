@@ -98,7 +98,8 @@ body {
         }
 
         h3 {
-            margin-top: $margin-wide;
+            margin-top:    $margin-default * 2;
+            margin-bottom: $margin-default;
         }
     }
 
