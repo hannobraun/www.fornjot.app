@@ -76,8 +76,14 @@ body {
         }
     }
 
-    > main img {
-        max-width: 100%;
+    > main {
+        img {
+            max-width: 100%;
+        }
+
+        h3 {
+            margin-top: $margin-wide;
+        }
     }
 
     > footer {
@@ -153,22 +159,16 @@ ol.blog {
     }
 }
 
-article.blog-post {
-    header {
-        h2 {
-            margin-bottom: 0;
-        }
-
-        > span {
-            font-size: 85%;
-
-            time {
-                font-weight: bold;
-            }
-        }
+article.blog-post header {
+    h2 {
+        margin-bottom: 0;
     }
 
-    h3 {
-        margin-top: $margin-wide;
+    > span {
+        font-size: 85%;
+
+        time {
+            font-weight: bold;
+        }
     }
 }
