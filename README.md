@@ -4,6 +4,7 @@
 
 The website for [Fornjot](https://github.com/hannobraun/Fornjot), the next-generation Code-CAD application.
 
+
 ## Newsletter
 
 We're misusing Zola to also generate HTML code for the email newsletter. To generate a newsletter:
@@ -11,6 +12,7 @@ We're misusing Zola to also generate HTML code for the email newsletter. To gene
 1. Add `template = "newsletter.html"` to the top of the Markdown file temporarily.
 2. Run `zola build`
 3. Get the HTML from the generated page in the `public/` directory.
+
 
 ## License
 
