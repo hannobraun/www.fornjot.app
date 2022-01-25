@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <title>{{ page.title }}</title>
+
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                color:       #111111;
+
+                max-width:    36rem;
+                margin-left:  auto;
+                margin-right: auto;
+            }
+
+            body header, body footer {
+                font-size:  85%;
+                font-style: italic;
+            }
+
+            body header {
+                max-width:    85%;
+                margin-left:  auto;
+                margin-right: auto;
+
+                text-align: center;
+
+                margin-bottom: 2rem;
+            }
+
+            body main h3 {
+                margin-top:    2rem;
+                margin-bottom: 1rem;
+            }
+
+            body main p {
+                margin-top:    1rem;
+                margin-bottom: 0;
+            }
+
+            body main ol, body main ul {
+                margin-top:    0.5rem;
+                margin-bottom: 0;
+            }
+
+            body footer {
+                margin-top:    4rem;
+                margin-bottom: 4rem;
+            }
+
+            body footer div {
+                margin-top:    2rem;
+                margin-bottom: 2rem;
+
+                width:        fit-content;
+                margin-left:  auto;
+                margin-right: auto;
+            }
+
+            body footer div.unsubscribe {
+                text-align: center;
+            }
+
+            a {
+                color:       #0880e8;
+                font-weight: bold;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <p>You are receiving this email because you signed up for this newsletter at the <a href="https://www.fornjot.app/">Fornjot website</a>. Please check the bottom of this email for more information, and a link to unsubscribe.</p>
+        </header>
+        <main>
+            <p>
+                This is the Weekly Dev Log, a summary of the previous week's development activities. If you want to read this in a browser, or share a link with a friend, please check out <a href="{{ page.permalink }}">the online version on the website</a>.
+            </p>
+            <p>
+                This is also the first Weekly Dev Blog for Fornjot ever! Please bear with me, as I figure out a good format for these things over the next few weeks.
+            </p>
+
+            {{ page.content | safe }}
+        </main>
+        <footer>
+            <div class="address">
+                <p>This email was sent by me:</p>
+                <address>
+                    <strong>Hanno Braun</strong><br />
+                    <br />
+                    Untere Pfarrgasse 19<br />
+                    64720 Michelstadt<br />
+                    Germany<br />
+                    <br />
+                    <a href="mailto:hanno@braun-odw.eu">hanno@braun-odw.eu</a><br />
+                    <a href="https://matrix.to/#/@hanno:braun-odw.eu">@hanno:braun-odw.eu</a>
+                </address>
+            </div>
+            <div class="unsubscribe">
+                <p>
+                    You received this email because you signed up for this newsletter at the <a href="https://www.fornjot.app/">Fornjot website</a>. If you no longer want to receive these emails, please click on the following link.
+                </p>
+                <a href="{$unsubscribe}">Unsubscribe</a>
+            </div>
+        </footer>
+    </body>
+</html>
