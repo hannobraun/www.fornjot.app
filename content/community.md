@@ -2,7 +2,7 @@
 title = "Community"
 +++
 
-If you are interested in Fornjot, please consider joining the community! We'd love to have you!
+If you are interested in Fornjot, please consider joining the community. We'd love to have you!
 
 
 ### Questions, Feedback, Discussions
