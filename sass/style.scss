@@ -77,6 +77,20 @@ body {
     }
 
     > main {
+        header {
+            h2 {
+                margin-bottom: 0;
+            }
+
+            > span {
+                font-size: 85%;
+
+                time {
+                    font-weight: bold;
+                }
+            }
+        }
+
         img {
             max-width: 100%;
         }
@@ -156,19 +170,5 @@ ol.blog {
 
     li time {
         font-weight: bold;
-    }
-}
-
-article.blog-post header {
-    h2 {
-        margin-bottom: 0;
-    }
-
-    > span {
-        font-size: 85%;
-
-        time {
-            font-weight: bold;
-        }
     }
 }
