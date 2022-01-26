@@ -94,6 +94,18 @@ body {
             }
         }
 
+        aside {
+            max-width:    fit-content;
+            margin-left:  auto;
+            margin-right: auto;
+
+            padding:          $margin-default;
+            border-radius:    $border-radius;
+            background-color: #ffff66;
+
+            font-size: $size-reduced;
+        }
+
         img {
             max-width: 100%;
         }
