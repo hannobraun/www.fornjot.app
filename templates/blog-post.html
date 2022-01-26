@@ -9,6 +9,8 @@
             </span>
         </header>
 
+        {% block pre_content %}{% endblock %}
+
         {{ page.content | safe }}
     </article>
 {% endblock %}
