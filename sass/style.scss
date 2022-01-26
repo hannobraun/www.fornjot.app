@@ -11,6 +11,7 @@ $margin-wide:    3rem;
 $margin-narrow:  0.25rem;
 
 $border-radius: 0.25rem;
+$size-reduced:  85%;
 
 body {
     font-family: Arial, sans-serif;
@@ -85,7 +86,7 @@ body {
             }
 
             > span {
-                font-size: 85%;
+                font-size: $size-reduced;
 
                 time {
                     font-weight: bold;
