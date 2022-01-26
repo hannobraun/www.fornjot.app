@@ -1,6 +1,13 @@
 +++
 title = "Why Fornjot is Using Boundary Representation"
 date  = 2022-01-26
+
+# Workaround, since we can't tell a transparent section that we don't want it as
+# part of the URL.
+path = "blog/why-fornjot-is-using-boundary-representation"
+
+[extra]
+canonical = "https://hanno.braun-odw.eu/notes/why-fornjot-is-using-boundary-representation/"
 +++
 
 Fornjot uses a technique called boundary representation (or b-rep, for short). This is the traditional technique, used by many of the big commercial CAD packages, and it wasn't my first choice. In this note, I'd like to explain where I started with Fornjot, and why I ended up with b-rep.
