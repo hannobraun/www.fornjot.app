@@ -3,8 +3,6 @@ title = "Weekly Dev Log for 2022-W03"
 date  = 2022-01-24
 +++
 
-[Fornjot](https://www.fornjot.app/) is a project to create a next-generation Code-CAD application. This is Fornjot's Weekly Dev Log, a summary of the previous week's development activities.
-
 This is also the first Weekly Dev Blog for Fornjot ever! Please bear with me, as I figure out a good format for these things over the next few weeks.
 
 
