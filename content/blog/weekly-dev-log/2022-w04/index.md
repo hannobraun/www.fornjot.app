@@ -3,7 +3,7 @@ title = "Weekly Dev Log for 2022-W04"
 date  = 2022-01-31
 +++
 
-In addition to the work highlighted below, last week saw the release of Fornjot 0.5. Check out the [release announcement](/blog/fornjot-0-5-0/)!
+In addition to the work highlighted below, last week saw the release of Fornjot 0.5. Check out the [release announcement](https://www.fornjot.app/blog/fornjot-0-5-0/)!
 
 ### Sponsors
 
