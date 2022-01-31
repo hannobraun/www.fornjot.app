@@ -8,9 +8,9 @@ Fornjot is an **early-stage project** to create a **next-generation Code-CAD app
 
 ## Sponsors
 
-Fornjot is supported by some awesome sponsors: [@lthiery](https://github.com/lthiery), [@Yatekii](https://github.com/Yatekii), [@ahdinosaur](https://github.com/ahdinosaur), and [@jessebraham](https://github.com/jessebraham).
+Fornjot is supported by some awesome sponsors: [@lthiery](https://github.com/lthiery), [@Yatekii](https://github.com/Yatekii), [@ahdinosaur](https://github.com/ahdinosaur), [@jessebraham](https://github.com/jessebraham), and [@Kethku](https://github.com/Kethku). Thank you!
 
-If you're interested in making the project sustainable long-term, please consider [sponsoring Fornjot](https://github.com/sponsors/hannobraun) yourself.
+If you're interested in helping to make the project sustainable long-term, please consider [sponsoring Fornjot](https://github.com/sponsors/hannobraun) yourself.
 
 
 ## Vision
