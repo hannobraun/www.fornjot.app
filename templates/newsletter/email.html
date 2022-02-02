@@ -77,9 +77,7 @@
             </p>
         </header>
         <main>
-            <p>
-                This is the Weekly Dev Log, a summary of the previous week's development activities. If you want to read this in a browser or share a link with a friend, please check out <a href="{{ page.permalink }}">the online version on the website</a>.
-            </p>
+            {% block pre_content %}{% endblock %}
 
             {{ page.content | safe }}
         </main>
