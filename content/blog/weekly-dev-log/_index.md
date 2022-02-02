@@ -1,5 +1,5 @@
 +++
-page_template = "weekly-dev-log.html"
+page_template = "blog/weekly-dev-log.html"
 
 render      = false
 transparent = true
