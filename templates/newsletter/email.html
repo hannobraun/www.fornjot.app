@@ -72,12 +72,12 @@
     </head>
     <body>
         <header>
-            <p>You are receiving this email because you signed up for this newsletter at the <a href="https://www.fornjot.app/">Fornjot website</a>. Please check the bottom of this email for more information, and a link to unsubscribe.</p>
+            <p>
+                Fornjot is an early-stage project to create a next-generation Code-CAD application. You are receiving this email because you signed up for the newsletter at the <a href="https://www.fornjot.app/">Fornjot website</a>. Please check the bottom of this email for more information, and a link to unsubscribe.
+            </p>
         </header>
         <main>
-            <p>
-                This is the Weekly Dev Log, a summary of the previous week's development activities. If you want to read this in a browser, or share a link with a friend, please check out <a href="{{ page.permalink }}">the online version on the website</a>.
-            </p>
+            {% block pre_content %}{% endblock %}
 
             {{ page.content | safe }}
         </main>

@@ -1,5 +1,5 @@
 +++
-page_template = "cross-post.html"
+page_template = "blog/cross-post.html"
 
 render      = false
 transparent = true
