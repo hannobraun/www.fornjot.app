@@ -6,13 +6,6 @@ Fornjot is an **early-stage project** to create a **next-generation Code-CAD app
 ![Screenshot of Fornjot](screenshot.png)
 
 
-## Sponsors
-
-Fornjot is supported by some awesome sponsors: [@lthiery](https://github.com/lthiery), [@Yatekii](https://github.com/Yatekii), [@ahdinosaur](https://github.com/ahdinosaur), [@jessebraham](https://github.com/jessebraham), and [@Kethku](https://github.com/Kethku). Thank you!
-
-If you're interested in helping to make the project sustainable long-term, please consider [sponsoring Fornjot](https://github.com/sponsors/hannobraun) yourself.
-
-
 ## Vision
 
 Fornjot is working towards a long-term vision, following these principles:
@@ -24,3 +17,10 @@ Fornjot is working towards a long-term vision, following these principles:
 - **Free and open source**: Fornjot is open source software, available under a permissive license. Try it out for free, with no strings attached. Modify it to your needs. If it's useful to you, decide for yourself how you want to support its further development.
 
 It's still early days, and it will take a long time before Fornjot can truly achieve this vision. Please consider supporting the project, by [helping out yourself](https://github.com/hannobraun/Fornjot) or [contributing financially](https://github.com/sponsors/hannobraun).
+
+
+## Sponsors
+
+Fornjot is supported by some awesome sponsors: [@lthiery](https://github.com/lthiery), [@Yatekii](https://github.com/Yatekii), [@ahdinosaur](https://github.com/ahdinosaur), [@jessebraham](https://github.com/jessebraham), and [@Kethku](https://github.com/Kethku). Thank you!
+
+If you're interested in helping to make the project sustainable long-term, please consider [sponsoring Fornjot](https://github.com/sponsors/hannobraun) yourself.
