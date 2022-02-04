@@ -127,6 +127,10 @@ body {
         ol, ul {
             margin-top:    $margin-default / 2;
             margin-bottom: 0;
+
+            li {
+                margin-top: $margin-narrow;
+            }
         }
     }
 
