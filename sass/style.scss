@@ -166,6 +166,10 @@ a {
     font-weight: bold;
 }
 
+code:not(.language-rust) {
+    background-color: #e0e0e0;
+}
+
 form.newsletter {
     max-width: $width-narrow;
     margin:    $margin-wide auto;
