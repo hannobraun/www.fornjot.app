@@ -1,3 +1,5 @@
+{% import "macros/newsletter.html" as newsletter %}
+
 {% extends "base.html" %}
 
 {% block main %}
@@ -12,5 +14,9 @@
         {% block pre_content %}{% endblock %}
 
         {{ page.content | safe }}
+
+        <footer>
+            {{ newsletter::form() }}
+        </footer>
     </article>
 {% endblock %}
