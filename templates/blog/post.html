@@ -11,7 +11,9 @@
             </span>
         </header>
 
-        {% block pre_content %}{% endblock %}
+        <aside>
+            {% block pre_content %}{% endblock %}
+        </aside>
 
         {{ page.content | safe }}
 
