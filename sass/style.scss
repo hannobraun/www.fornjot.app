@@ -2,7 +2,7 @@ $color-normal: #333333;
 $color-strong: #222222;
 $color-titles: #111111;
 $color-links:  #0880e8;
-$color-bg:     #f4f4f4;
+$color-bg:     #ffffc0;
 
 $width-content:  42rem;
 $width-narrow:   30rem;
@@ -105,7 +105,7 @@ body {
 
             padding:          $margin-default;
             border-radius:    $border-radius;
-            background-color: #ffff66;
+            background-color: $color-bg;
 
             font-size: $size-reduced;
         }
@@ -167,7 +167,7 @@ a {
 }
 
 code:not(.language-rust) {
-    background-color: #e0e0e0;
+    background-color: #f0f0f0;
 }
 
 form.newsletter {
