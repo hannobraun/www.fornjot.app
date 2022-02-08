@@ -103,11 +103,17 @@ body {
             margin-left:  auto;
             margin-right: auto;
 
+            font-style: italic;
+
             padding:          $margin-default;
             border-radius:    $border-radius;
             background-color: $color-bg;
 
             font-size: $size-reduced;
+
+            p:first-child {
+                margin-top: 0;
+            }
         }
 
         img {
