@@ -110,6 +110,10 @@ body {
             background-color: $color-bg;
 
             font-size: $size-reduced;
+
+            p:first-child {
+                margin-top: 0;
+            }
         }
 
         img {
