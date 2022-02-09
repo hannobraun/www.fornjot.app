@@ -1,3 +1,4 @@
+title    = "Fornjot"
 base_url = "https://www.fornjot.app/"
 
 compile_sass       = true
