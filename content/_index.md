@@ -26,6 +26,6 @@ It's still early days, and it will take a long time before Fornjot can truly ach
 
 ## Sponsors
 
-Fornjot is supported by some awesome sponsors: [@lthiery](https://github.com/lthiery), [@Yatekii](https://github.com/Yatekii), [@ahdinosaur](https://github.com/ahdinosaur), [@jessebraham](https://github.com/jessebraham), and [@Kethku](https://github.com/Kethku). Thank you!
+Fornjot is supported by some awesome sponsors: [@lthiery](https://github.com/lthiery), [@Yatekii](https://github.com/Yatekii), [@ahdinosaur](https://github.com/ahdinosaur), [@jessebraham](https://github.com/jessebraham), [@Kethku](https://github.com/Kethku), and [@sanxiyn](https://github.com/sanxiyn). Thank you!
 
 If you're interested in helping to make the project sustainable long-term, please consider [sponsoring Fornjot](https://github.com/sponsors/hannobraun) yourself.
