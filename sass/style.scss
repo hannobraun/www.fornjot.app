@@ -238,3 +238,14 @@ ol.blog {
         font-weight: bold;
     }
 }
+
+strong.call-to-action {
+    @include emphasized-box($margin-default);
+
+    display:   block;
+    max-width: fit-content;
+
+    p {
+        margin: 0;
+    }
+}

@@ -6,6 +6,12 @@ Hey, it's me, [Hanno Braun](https://github.com/hannobraun), Fornjot's creator, m
 
 The long-term viability of Fornjot depends on people like you sponsoring its development. Whether you are willing to give a lot, or you can just spare a little, [you can help][GitHub Sponsors]. Even small contributions add up!
 
+<strong class="call-to-action">
+    <p>
+        Already decided? Head over to my <a href="https://github.com/sponsors/hannobraun">GitHub Sponsors profile</a>!
+    </p>
+</strong>
+
 
 ### Why sponsor?
 
@@ -50,6 +56,13 @@ Even it you don't have much to give, every little bit helps. Small amounts add u
 All the monthly sponsorship tiers come with rewards. Every sponsor receives my monthly update, where I talk about how the project is going, including behind-the-scenes stuff that I don't publish anywhere else. Higher tiers come with more rewards, like your name or logo on the website and in the Weekly Dev Log.
 
 Check out [my GitHub Sponsors profile][GitHub Sponsors] for all the details.
+
+
+<strong class="call-to-action">
+    <p>
+        To support me, head over to my <a href="https://github.com/sponsors/hannobraun">GitHub Sponsors profile</a>!
+    </p>
+</strong>
 
 
 [GitHub Sponsors]: https://github.com/sponsors/hannobraun
