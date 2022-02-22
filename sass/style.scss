@@ -23,6 +23,17 @@ $size-reduced:  85%;
     padding: $padding;
 }
 
+@mixin call-to-action($padding) {
+    @include emphasized-box($margin-default, $padding);
+
+    display:   block;
+    max-width: fit-content;
+
+    p {
+        margin: 0;
+    }
+}
+
 
 body {
     font-family: Arial, sans-serif;
@@ -240,12 +251,5 @@ ol.blog {
 }
 
 strong.call-to-action {
-    @include emphasized-box($margin-default);
-
-    display:   block;
-    max-width: fit-content;
-
-    p {
-        margin: 0;
-    }
+    @include call-to-action($margin-default);
 }
