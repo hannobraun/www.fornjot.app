@@ -13,6 +13,17 @@ $margin-narrow:  0.25rem;
 $border-radius: 0.25rem;
 $size-reduced:  85%;
 
+
+@mixin emphasized-box($margin) {
+    margin: $margin auto;
+
+    border-radius:    $border-radius;
+    background-color: $color-bg;
+
+    padding: $margin-default;
+}
+
+
 body {
     font-family: Arial, sans-serif;
     color:       $color-normal;
@@ -112,20 +123,11 @@ body {
         }
 
         aside {
-            max-width:    fit-content;
-            margin-left:  auto;
-            margin-right: auto;
+            @include emphasized-box($margin-default);
 
-            margin-top:    $margin-default;
-            margin-bottom: $margin-default;
-
+            max-width:  fit-content;
             font-style: italic;
-
-            padding:          $margin-default;
-            border-radius:    $border-radius;
-            background-color: $color-bg;
-
-            font-size: $size-reduced;
+            font-size:  $size-reduced;
 
             p:first-child {
                 margin-top: 0;
@@ -193,13 +195,9 @@ code:not(.language-rust) {
 }
 
 form.newsletter {
+    @include emphasized-box($margin-wide);
+
     max-width: $width-narrow;
-    margin:    $margin-wide auto;
-
-    border-radius:    $border-radius;
-    background-color: $color-bg;
-
-    padding: $margin-default;
 
     h2 {
         margin-top: 0;
