@@ -14,13 +14,24 @@ $border-radius: 0.25rem;
 $size-reduced:  85%;
 
 
-@mixin emphasized-box($margin) {
+@mixin emphasized-box($margin, $padding: $margin-default) {
     margin: $margin auto;
 
     border-radius:    $border-radius;
     background-color: $color-bg;
 
-    padding: $margin-default;
+    padding: $padding;
+}
+
+@mixin call-to-action($padding) {
+    @include emphasized-box($margin-default, $padding);
+
+    display:   block;
+    max-width: fit-content;
+
+    p {
+        margin: 0;
+    }
 }
 
 
@@ -156,6 +167,10 @@ body {
                 margin-top: $margin-narrow;
             }
         }
+
+        strong.call-to-action {
+            @include call-to-action($margin-default);
+        }
     }
 
     > footer {
@@ -173,6 +188,10 @@ body {
 
             margin-top:    $margin-wide;
             margin-bottom: $margin-wide;
+        }
+
+        strong.call-to-action {
+            @include call-to-action($margin-default * 0.5);
         }
     }
 }
@@ -236,16 +255,5 @@ ol.blog {
 
     li time {
         font-weight: bold;
-    }
-}
-
-strong.call-to-action {
-    @include emphasized-box($margin-default);
-
-    display:   block;
-    max-width: fit-content;
-
-    p {
-        margin: 0;
     }
 }
