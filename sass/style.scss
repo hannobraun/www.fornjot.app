@@ -2,7 +2,7 @@ $color-normal: #333333;
 $color-strong: #222222;
 $color-titles: #111111;
 $color-links:  #0880e8;
-$color-bg:     #ffffc0;
+$color-bg:     #ffff80;
 
 $width-content:  42rem;
 $width-narrow:   30rem;
@@ -12,6 +12,17 @@ $margin-narrow:  0.25rem;
 
 $border-radius: 0.25rem;
 $size-reduced:  85%;
+
+
+@mixin emphasized-box($margin) {
+    margin: $margin auto;
+
+    border-radius:    $border-radius;
+    background-color: $color-bg;
+
+    padding: $margin-default;
+}
+
 
 body {
     font-family: Arial, sans-serif;
@@ -43,8 +54,7 @@ body {
         nav {
             display: flex;
 
-            flex-direction:  row;
-            justify-content: flex-end;
+            flex-direction: row-reverse;
 
             ul {
                 list-style-type: none;
@@ -61,7 +71,14 @@ body {
                         text-decoration: none;
 
                         color: $color-strong;
+
+                        padding:       $margin-narrow;
+                        border-radius: $border-radius;
                     }
+                }
+
+                li.emphasize a {
+                    background-color: $color-bg;
                 }
 
                 li:not(:last-child)::after {
@@ -106,17 +123,11 @@ body {
         }
 
         aside {
-            max-width:    fit-content;
-            margin-left:  auto;
-            margin-right: auto;
+            @include emphasized-box($margin-default);
 
+            max-width:  fit-content;
             font-style: italic;
-
-            padding:          $margin-default;
-            border-radius:    $border-radius;
-            background-color: $color-bg;
-
-            font-size: $size-reduced;
+            font-size:  $size-reduced;
 
             p:first-child {
                 margin-top: 0;
@@ -184,13 +195,9 @@ code:not(.language-rust) {
 }
 
 form.newsletter {
+    @include emphasized-box($margin-wide);
+
     max-width: $width-narrow;
-    margin:    $margin-wide auto;
-
-    border-radius:    $border-radius;
-    background-color: $color-bg;
-
-    padding: $margin-default;
 
     h2 {
         margin-top: 0;
@@ -229,5 +236,16 @@ ol.blog {
 
     li time {
         font-weight: bold;
+    }
+}
+
+strong.call-to-action {
+    @include emphasized-box($margin-default);
+
+    display:   block;
+    max-width: fit-content;
+
+    p {
+        margin: 0;
     }
 }
