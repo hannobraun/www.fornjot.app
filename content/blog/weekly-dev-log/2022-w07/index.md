@@ -41,7 +41,7 @@ If you're interested in helping to make the project sustainable long-term, pleas
 
 Now that I got the math code squared away, I'm back on track to address [#97]. I feel like I'm getting pretty close to finally fixing that, but it's hard to say how long it will still take.
 
-I can already see some issues I need to address first, like improving the approximation and triangulation code to support faces that are continues, meaning they connect to themselves (like the outside of a cylinder). And I'm sure there are more problems that will pop up as I'm getting closer.
+I can already see some issues I need to address first, like improving the approximation and triangulation code to support faces that are continuous, meaning they connect to themselves (like the outside of a cylinder). And I'm sure there are more problems that will pop up as I'm getting closer.
 
 
 [#181]: https://github.com/hannobraun/Fornjot/pull/181
