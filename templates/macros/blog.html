@@ -1,6 +1,10 @@
 {%- macro metadata(post) -%}
     <span class="metadata">
         Posted on {{ blog::time_elem(date=post.date) }} by <a href="https://github.com/hannobraun">Hanno Braun</a>
+
+        {% if post.updated -%}
+            (updated {{ blog::time_elem(date=post.updated) }})
+        {%- endif -%}
     </span>
 {%- endmacro -%}
 
