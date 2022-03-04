@@ -14,13 +14,17 @@ $border-radius: 0.25rem;
 $size-reduced:  85%;
 
 
-@mixin emphasized-box($margin, $padding: $margin-default) {
+@mixin box($color, $margin, $padding: $margin-default) {
     margin: $margin auto;
 
     border-radius:    $border-radius;
-    background-color: $color-bg;
+    background-color: $color;
 
     padding: $padding;
+}
+
+@mixin emphasized-box($margin, $padding: $margin-default) {
+    @include box($color-bg, $margin, $padding)
 }
 
 @mixin call-to-action($padding) {
