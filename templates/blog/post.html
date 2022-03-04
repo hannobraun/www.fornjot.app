@@ -1,4 +1,5 @@
 {% import "macros/newsletter.html" as newsletter %}
+{% import "macros/blog.html" as blog %}
 
 {% extends "base.html" %}
 
@@ -6,9 +7,7 @@
     <article class="blog-post">
         <header>
             <h2>{{ page.title }}</h2>
-            <span class="metadata">
-                Posted on <time datetime="{{ page.date }}">{{ page.date }}</time> by <a href="https://github.com/hannobraun">Hanno Braun</a>
-            </span>
+            {{ blog::metadata(post=page) }}
         </header>
 
         <aside>
