@@ -21,6 +21,24 @@
         {{ page.content | safe }}
 
         <footer>
+            {% if page.extra.changes %}
+                <section id="changes" class="changes">
+                    <h3>Changes</h3>
+                    <table>
+                        <tr>
+                            <th>{{ page.date }}</th>
+                            <td>Initial release.</td>
+                        </tr>
+                        {% for change in page.extra.changes %}
+                            <tr>
+                                <th>{{ change.date }}</th>
+                                <td>{{ change.text | markdown | safe }}</td>
+                            </tr>
+                        {% endfor %}
+                    </table>
+                </section>
+            {% endif %}
+
             {{ newsletter::form() }}
         </footer>
     </article>

@@ -258,6 +258,34 @@ ol.blog {
     }
 }
 
+article.blog-post {
+    section.changes {
+        @include box(#f8f8f8, $margin-default);
+
+        max-width: $width-narrow;
+        margin: $margin-wide auto;
+
+        h3 {
+            margin-top: 0;
+        }
+
+        th, td {
+            vertical-align: text-top;
+            padding: $margin-narrow;
+        }
+
+        td {
+            p, ul {
+                margin: 0;
+            }
+
+            ul {
+                padding-left: $margin-default;
+            }
+        }
+    }
+}
+
 span.metadata {
     font-size: $size-reduced;
 
