@@ -8,7 +8,7 @@
     <ol class="blog">
         {% for page in section.pages %}
             <li>
-                <time datetime="{{ page.date }}">{{ page.date }}</time>:
+                <span class="metadata"><time datetime="{{ page.date }}">{{ page.date }}</time></span><br />
                 <a href="{{ page.path }}">{{ page.title }}</a>
             </li>
         {% endfor %}

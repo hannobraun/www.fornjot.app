@@ -253,7 +253,19 @@ ol.blog {
     list-style-type: none;
     padding:         0;
 
-    li time {
-        font-weight: bold;
+    li {
+        margin-bottom: $margin-default;
+
+        span.metadata {
+            font-size: $size-reduced;
+
+            time {
+                font-weight: bold;
+            }
+        }
+
+        > a {
+            margin-left: $margin-default;
+        }
     }
 }
