@@ -248,7 +248,7 @@ ol.blog {
     li {
         margin-bottom: $margin-default;
 
-        > a {
+        span.metadata {
             margin-left: $margin-default;
         }
     }

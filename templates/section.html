@@ -10,8 +10,8 @@
     <ol class="blog">
         {% for page in section.pages %}
             <li>
-                {{ blog::metadata(post=page) }}<br />
-                <a href="{{ page.path }}">{{ page.title }}</a>
+                <a href="{{ page.path }}">{{ page.title }}</a><br />
+                {{ blog::metadata(post=page) }}
             </li>
         {% endfor %}
     </ol>
