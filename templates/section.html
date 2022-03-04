@@ -1,3 +1,5 @@
+{% import "macros/blog.html" as blog %}
+
 {% extends "base.html" %}
 
 {% block main %}
@@ -8,7 +10,7 @@
     <ol class="blog">
         {% for page in section.pages %}
             <li>
-                <span class="metadata"><time datetime="{{ page.date }}">{{ page.date }}</time></span><br />
+                {{ blog::metadata(post=page) }}<br />
                 <a href="{{ page.path }}">{{ page.title }}</a>
             </li>
         {% endfor %}
