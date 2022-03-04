@@ -14,13 +14,17 @@ $border-radius: 0.25rem;
 $size-reduced:  85%;
 
 
-@mixin emphasized-box($margin, $padding: $margin-default) {
+@mixin box($color, $margin, $padding: $margin-default) {
     margin: $margin auto;
 
     border-radius:    $border-radius;
-    background-color: $color-bg;
+    background-color: $color;
 
     padding: $padding;
+}
+
+@mixin emphasized-box($margin, $padding: $margin-default) {
+    @include box($color-bg, $margin, $padding)
 }
 
 @mixin call-to-action($padding) {
@@ -122,14 +126,6 @@ body {
 
             h2 {
                 margin-bottom: 0;
-            }
-
-            > span {
-                font-size: $size-reduced;
-
-                time {
-                    font-weight: bold;
-                }
             }
         }
 
@@ -253,7 +249,47 @@ ol.blog {
     list-style-type: none;
     padding:         0;
 
-    li time {
+    li {
+        margin-bottom: $margin-default;
+
+        span.metadata {
+            margin-left: $margin-default;
+        }
+    }
+}
+
+article.blog-post {
+    section.changes {
+        @include box(#f8f8f8, $margin-default);
+
+        max-width: $width-narrow;
+        margin: $margin-wide auto;
+
+        h3 {
+            margin-top: 0;
+        }
+
+        th, td {
+            vertical-align: text-top;
+            padding: $margin-narrow;
+        }
+
+        td {
+            p, ul {
+                margin: 0;
+            }
+
+            ul {
+                padding-left: $margin-default;
+            }
+        }
+    }
+}
+
+span.metadata {
+    font-size: $size-reduced;
+
+    time {
         font-weight: bold;
     }
 }

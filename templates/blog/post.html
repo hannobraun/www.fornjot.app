@@ -1,4 +1,5 @@
 {% import "macros/newsletter.html" as newsletter %}
+{% import "macros/blog.html" as blog %}
 
 {% extends "base.html" %}
 
@@ -6,9 +7,7 @@
     <article class="blog-post">
         <header>
             <h2>{{ page.title }}</h2>
-            <span>
-                Posted on <time datetime="{{ page.date }}">{{ page.date }}</time> by <a href="https://github.com/hannobraun">Hanno Braun</a>
-            </span>
+            {{ blog::metadata(post=page) }}
         </header>
 
         <aside>
@@ -22,6 +21,24 @@
         {{ page.content | safe }}
 
         <footer>
+            {% if page.extra.changes %}
+                <section id="changes" class="changes">
+                    <h3>Changes</h3>
+                    <table>
+                        <tr>
+                            <th>{{ page.date }}</th>
+                            <td>Initial release.</td>
+                        </tr>
+                        {% for change in page.extra.changes %}
+                            <tr>
+                                <th>{{ change.date }}</th>
+                                <td>{{ change.text | markdown | safe }}</td>
+                            </tr>
+                        {% endfor %}
+                    </table>
+                </section>
+            {% endif %}
+
             {{ newsletter::form() }}
         </footer>
     </article>
