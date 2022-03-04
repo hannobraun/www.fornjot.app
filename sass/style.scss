@@ -123,14 +123,6 @@ body {
             h2 {
                 margin-bottom: 0;
             }
-
-            > span {
-                font-size: $size-reduced;
-
-                time {
-                    font-weight: bold;
-                }
-            }
         }
 
         aside {
@@ -256,16 +248,16 @@ ol.blog {
     li {
         margin-bottom: $margin-default;
 
-        span.metadata {
-            font-size: $size-reduced;
-
-            time {
-                font-weight: bold;
-            }
-        }
-
         > a {
             margin-left: $margin-default;
         }
+    }
+}
+
+span.metadata {
+    font-size: $size-reduced;
+
+    time {
+        font-weight: bold;
     }
 }
