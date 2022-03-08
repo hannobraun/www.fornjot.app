@@ -25,6 +25,6 @@ Want to learn more? Here are some resources you might be interested in:
 
 ### Sponsors
 
-Fornjot is supported by some awesome sponsors: [@webtrax-oz](https://github.com/webtrax-oz), [@lthiery](https://github.com/lthiery), [@Yatekii](https://github.com/Yatekii), [@martindederer](https://github.com/martindederer), [@ahdinosaur](https://github.com/ahdinosaur), [@jessebraham](https://github.com/jessebraham), [@Kethku](https://github.com/Kethku), and [@sanxiyn](https://github.com/sanxiyn). Thank you!
+Fornjot is supported by some awesome sponsors: [@webtrax-oz](https://github.com/webtrax-oz), [@lthiery](https://github.com/lthiery), [@Yatekii](https://github.com/Yatekii), [@martindederer](https://github.com/martindederer), [@ahdinosaur](https://github.com/ahdinosaur), [@jessebraham](https://github.com/jessebraham), [@Kethku](https://github.com/Kethku), [@sanxiyn](https://github.com/sanxiyn), and my other awesome sponsors. Thank you!
 
 If you're interested in helping to make the project sustainable long-term, please consider [sponsoring Fornjot](https://github.com/sponsors/hannobraun) yourself.
