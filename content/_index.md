@@ -10,7 +10,7 @@ The **goal of this project** is to create a CAD application that:
 - uses a **code-first** approach;
 - is **open source**;
 - is broadly available, with **support for all major platforms**;
-- is based on a **new CAD kernel, written in Rust**;
+- is based on a **new b-rep CAD kernel**, written in Rust;
 - provides a **well-rounded feature set**;
 - and support for **different modeling languages**.
 
