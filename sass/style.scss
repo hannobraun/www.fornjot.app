@@ -291,3 +291,9 @@ span.metadata {
         font-weight: bold;
     }
 }
+
+ul.toc {
+    @include box($color-emphasis-light, $margin-default);
+
+    list-style-type:  none;
+}
