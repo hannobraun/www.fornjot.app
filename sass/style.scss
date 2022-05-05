@@ -2,7 +2,8 @@ $color-normal: #333333;
 $color-strong: #222222;
 $color-titles: #111111;
 $color-links:  #0880e8;
-$color-bg:     #ffff80;
+
+$color-emphasis-heavy: #ffff80;
 
 $width-content:  42rem;
 $width-narrow:   30rem;
@@ -24,7 +25,7 @@ $size-reduced:  85%;
 }
 
 @mixin emphasized-box($margin, $padding: $margin-default) {
-    @include box($color-bg, $margin, $padding)
+    @include box($color-emphasis-heavy, $margin, $padding)
 }
 
 @mixin call-to-action($padding) {
@@ -93,7 +94,7 @@ body {
                 }
 
                 li a.emphasize {
-                    background-color: $color-bg;
+                    background-color: $color-emphasis-heavy;
                 }
 
                 li:not(:last-child)::after {
