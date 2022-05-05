@@ -1,5 +1,7 @@
 +++
 title = "Frequently Asked Questions"
+
+template = "faq.html"
 +++
 
 ### What is Code-CAD?
