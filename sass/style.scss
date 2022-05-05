@@ -25,12 +25,8 @@ $size-reduced:  85%;
     padding: $padding;
 }
 
-@mixin emphasized-box($margin, $padding: $margin-default) {
-    @include box($color-emphasis-heavy, $margin, $padding)
-}
-
 @mixin call-to-action($padding) {
-    @include emphasized-box($margin-default, $padding);
+    @include box($color-emphasis-heavy, $margin-default, $padding);
 
     display:   block;
     max-width: fit-content;
@@ -132,7 +128,7 @@ body {
         }
 
         aside {
-            @include emphasized-box($margin-default);
+            @include box($color-emphasis-heavy, $margin-default);
 
             max-width:  fit-content;
             font-style: italic;
@@ -212,7 +208,7 @@ code:not(.language-rust) {
 }
 
 form.newsletter {
-    @include emphasized-box($margin-wide);
+    @include box($color-emphasis-heavy, $margin-wide);
 
     max-width: $width-narrow;
 
