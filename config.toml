@@ -5,5 +5,8 @@ compile_sass       = true
 generate_feed      = true
 build_search_index = false
 
+[slugify]
+paths = "safe"
+
 [markdown]
 highlight_code = true
