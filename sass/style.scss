@@ -4,6 +4,7 @@ $color-titles: #111111;
 $color-links:  #0880e8;
 
 $color-emphasis-heavy: #ffff80;
+$color-emphasis-light: #f8f8f8;
 
 $width-content:  42rem;
 $width-narrow:   30rem;
@@ -261,7 +262,7 @@ ol.blog {
 
 article.blog-post {
     section.changes {
-        @include box(#f8f8f8, $margin-default);
+        @include box($color-emphasis-light, $margin-default);
 
         max-width: $width-narrow;
         margin: $margin-wide auto;
