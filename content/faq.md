@@ -4,7 +4,7 @@ title = "Frequently Asked Questions"
 template = "faq.html"
 +++
 
-### What is Code-CAD?
+### What is Code-CAD? {#code-first}
 
 CAD (computer-aided design) is a type of software for designing 3D objects. It's distinct from 3D modeling software in general, in that it's focused on technical applications. Like designing parts of a machine (or the whole machine).
 
@@ -13,14 +13,14 @@ Most CAD software provides a graphical user interface, which can be both complic
 There's an [article about the advantages of Code-CAD](https://www.fornjot.app/blog/code-cad-advantages/) on the Fornjot blog.
 
 
-### Is Fornjot similar to [OpenSCAD](https://openscad.org/)?
+### Is Fornjot similar to [OpenSCAD](https://openscad.org/)? {#openscad}
 
 In principle, yes. In reality, Fornjot is at a much earlier stage of development, and still much more limited.
 
 Under the hood, Fornjot is using a completely different approach (called [boundary representation or b-rep](https://www.fornjot.app/blog/why-fornjot-is-using-boundary-representation/)), that will allow it to support more advanced features at some point. Like sketching on existing faces, or built-in support for bevels/chamfers.
 
 
-### How does Fornjot compare to [CadQuery](https://cadquery.readthedocs.io/en/latest/intro.html)?
+### How does Fornjot compare to [CadQuery](https://cadquery.readthedocs.io/en/latest/intro.html)? {#cadquery}
 
 CadQuery is a more feature-rich alternative to OpenSCAD that is based on a b-rep kernel. So asking what Fornjot hopes to add, given that CadQuery exists, is a fair question.
 
@@ -33,7 +33,7 @@ Long-term, I see the following opportunities to improve on CadQuery:
 - Provide alternatives in regard to modeling languages. Rust is different enough from Python to provide an interesting alternative that is going to be better for some use cases. And Fornjot is architected to be language-agnostic, so long-term, it's possible to support a whole selection of interoperable modeling languages.
 
 
-### Is Rust really the right language to define CAD models in?
+### Is Rust really the right language to define CAD models in? {#rust}
 
 Maybe not. It certainly isn't going to be ideal for most models.
 
@@ -45,7 +45,7 @@ So why is Fornjot using Rust then? Several reasons:
 Fornjot is architected to be language-agnostic, and adding support for other languages should be relatively straight-forward, actually. Hopefully one day, there will be a selection of interoperable Fornjot frontends, so you can choose the best language for *your* model.
 
 
-### Won't Rust's compile times prevent you from iterating on designs quickly?
+### Won't Rust's compile times prevent you from iterating on designs quickly? {#compile-times}
 
 Yes, compile times are a big, maybe the biggest, problem that Rust has. Earlier versions of Fornjot suffered big from that too.
 
