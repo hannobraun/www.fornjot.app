@@ -1,7 +1,7 @@
 +++
 +++
 
-Fornjot is an **early-stage project** to create a **next-generation Code-CAD application**.
+Fornjot is an **early-stage project** to create a **next-generation, code-first CAD application**.
 
 ![Screenshot of Fornjot](screenshot.png)
 

@@ -2,7 +2,7 @@
 
 ## About
 
-The website for [Fornjot](https://github.com/hannobraun/Fornjot), the next-generation Code-CAD application.
+The website for [Fornjot](https://github.com/hannobraun/Fornjot), the next-generation, code-first CAD application.
 
 
 ## Newsletter
