@@ -4,13 +4,13 @@ title = "Frequently Asked Questions"
 template = "faq.html"
 +++
 
-### What is Code-CAD? {#code-first}
+### What does "code-first CAD" mean? {#code-first}
 
 CAD (computer-aided design) is a type of software for designing 3D objects. It's distinct from 3D modeling software in general, in that it's focused on technical applications. Like designing parts of a machine (or the whole machine).
 
-Most CAD software provides a graphical user interface, which can be both complicated and limiting. Code-CAD is an alternative approach, in which CAD models are defined by code. You use a programming language to program your models, like you would software.
+Most CAD software provides a graphical user interface, which can be both complicated and limiting. Fornjot follows an alternative alternative approach, in which CAD models are defined by code. You use a programming language to program your models, like you would software. This is also called Code-CAD, or programmatic CAD.
 
-There's an [article about the advantages of Code-CAD](https://www.fornjot.app/blog/code-cad-advantages/) on the Fornjot blog.
+There's an [article about the advantages of this approach](https://www.fornjot.app/blog/code-cad-advantages/) on the Fornjot blog.
 
 
 ### Is Fornjot similar to [OpenSCAD](https://openscad.org/)? {#openscad}
