@@ -79,10 +79,10 @@
             <p>
                 Fornjot is an early-stage project to create a next-generation Code-CAD application. You are receiving this email because you signed up for the newsletter at the <a href="https://www.fornjot.app/">Fornjot website</a>. Please check the bottom of this email for more information, and a link to unsubscribe.
             </p>
+
+            {% block header %}{% endblock %}
         </header>
         <main>
-            {% block pre_content %}{% endblock %}
-
             {{ page.content | safe }}
         </main>
         <footer>
