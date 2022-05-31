@@ -162,7 +162,7 @@ body {
             }
         }
 
-        strong.call-to-action {
+        .call-to-action {
             @include call-to-action($margin-default);
         }
     }
