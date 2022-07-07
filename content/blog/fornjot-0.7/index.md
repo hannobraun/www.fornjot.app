@@ -1,6 +1,6 @@
 +++
 title = "Fornjot 0.7"
-path = "blog/fornjot-0.7"
+date = "2022-07-07"
 +++
 
 [Fornjot](https://www.fornjot.app/) is an early-stage project with the goal to create a next-generation, code-first CAD application. This is the announcement for Fornjot's new release, version 0.7.0.
