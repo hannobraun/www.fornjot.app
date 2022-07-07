@@ -162,6 +162,13 @@ body {
             }
         }
 
+        hr {
+            width: 75%;
+
+            margin-top: $margin-default;
+            margin-bottom: $margin-default;
+        }
+
         .call-to-action {
             @include call-to-action($margin-default);
         }
