@@ -99,7 +99,7 @@ Or you can specify your angle in radians:
 
 ``` rust
 // Rotate 180 degrees around the z-axis
-let rotated = my_shape.rotate([0., 0., 1.], fj::Angle::from_rad(2. * PI));
+let rotated = my_shape.rotate([0., 0., 1.], fj::Angle::from_rad(PI));
 ```
 
 Or even revolutions:
