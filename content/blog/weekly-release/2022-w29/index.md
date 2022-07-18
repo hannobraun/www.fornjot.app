@@ -1,6 +1,6 @@
 +++
 title = "Weekly Release - 2022-W29"
-path = "/blog/weekly-release/2022-w29/"
+date = 2022-07-18
 
 [extra]
 version = "0.8.0"
