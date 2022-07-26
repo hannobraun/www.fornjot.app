@@ -1,7 +1,16 @@
+use std::collections::BTreeMap;
+
+use chrono::{Date, NaiveDate, Utc};
 use octocrab::params::{pulls::Sort, Direction, State};
 
 #[tokio::main]
 async fn main() -> anyhow::Result<()> {
+    // Let's just hardcode this for now. We'll add a command-line parameter in a
+    // moment.
+    let last_release_date =
+        Date::<Utc>::from_utc(NaiveDate::from_ymd(2022, 07, 25), Utc);
+
+    let mut pull_requests = BTreeMap::new();
     let mut page = 1u32;
 
     loop {
@@ -17,7 +26,11 @@ async fn main() -> anyhow::Result<()> {
             .await?;
 
         for pull_request in pull_request_page.items {
-            println!("{}", pull_request.number);
+            if let Some(merged_at) = pull_request.merged_at {
+                if merged_at.date() >= last_release_date {
+                    pull_requests.insert(pull_request.number, pull_request);
+                }
+            }
         }
 
         if pull_request_page.next.is_some() {
@@ -25,6 +38,11 @@ async fn main() -> anyhow::Result<()> {
         } else {
             break;
         }
+    }
+
+    for (_, pull_request) in pull_requests {
+        let url = pull_request.html_url.expect("Pull request is missing URL");
+        println!("{}", url);
     }
 
     Ok(())
