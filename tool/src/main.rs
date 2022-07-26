@@ -13,7 +13,9 @@ async fn main() -> anyhow::Result<()> {
         .send()
         .await?;
 
-    println!("{:?}", pull_requests);
+    for pull_request in pull_requests.items {
+        println!("{}", pull_request.number);
+    }
 
     Ok(())
 }
