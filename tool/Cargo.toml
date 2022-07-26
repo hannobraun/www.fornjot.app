@@ -9,6 +9,10 @@ anyhow = "*"
 chrono = "*"
 octocrab = "*"
 
+[dependencies.clap]
+version = "*"
+features = ["derive"]
+
 [dependencies.tokio]
 version = "*"
 features = ["full"]
