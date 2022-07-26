@@ -1,0 +1,18 @@
+[package]
+name = "tool"
+version = "0.1.0"
+edition = "2021"
+publish = false
+
+[dependencies]
+anyhow = "*"
+chrono = "*"
+octocrab = "*"
+
+[dependencies.clap]
+version = "*"
+features = ["derive"]
+
+[dependencies.tokio]
+version = "*"
+features = ["full"]
