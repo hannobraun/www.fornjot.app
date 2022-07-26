@@ -14,6 +14,7 @@ async fn main() -> anyhow::Result<()> {
     let mut page = 1u32;
 
     loop {
+        println!("Fetching page {}...", page);
         let pull_request_page = octocrab::instance()
             .pulls("hannobraun", "Fornjot")
             .list()
