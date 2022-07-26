@@ -5,7 +5,7 @@ async fn main() -> anyhow::Result<()> {
     let mut page = 1u32;
 
     loop {
-        let pull_requests = octocrab::instance()
+        let pull_request_page = octocrab::instance()
             .pulls("hannobraun", "Fornjot")
             .list()
             .state(State::Closed)
@@ -16,11 +16,11 @@ async fn main() -> anyhow::Result<()> {
             .send()
             .await?;
 
-        for pull_request in pull_requests.items {
+        for pull_request in pull_request_page.items {
             println!("{}", pull_request.number);
         }
 
-        if pull_requests.next.is_some() {
+        if pull_request_page.next.is_some() {
             page += 1;
         } else {
             break;
