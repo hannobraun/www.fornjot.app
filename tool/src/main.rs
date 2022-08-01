@@ -12,7 +12,7 @@ async fn main() -> anyhow::Result<()> {
     let mut pull_requests = BTreeMap::new();
     let mut page = 1u32;
 
-    'outer: loop {
+    loop {
         println!("Fetching page {}...", page);
         let pull_request_page = octocrab::instance()
             .pulls("hannobraun", "Fornjot")
@@ -26,15 +26,6 @@ async fn main() -> anyhow::Result<()> {
             .await?;
 
         for pull_request in pull_request_page.items {
-            if let Some(created_at) = pull_request.created_at {
-                if created_at.date() < last_release_date {
-                    // Results are sorted by date of creation, descending. Since
-                    // we've reached on that was created before the last
-                    // release, that means we're done.
-                    break 'outer;
-                }
-            }
-
             if let Some(merged_at) = pull_request.merged_at {
                 if merged_at.date() >= last_release_date {
                     pull_requests.insert(pull_request.number, pull_request);
