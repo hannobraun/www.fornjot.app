@@ -25,7 +25,7 @@ The plan is to first focus on providing a stable experience for a subset of shap
 
 ### Actionable Milestones
 
-In addition to the immediate priority presented above, there are other milestones planned, that could be worked on given sufficient development resources. Contributions in these areas would be especially welcome. Once the current immediate priority has been addressed, those are good candidates to replace it as the main focus.
+In addition to the immediate priority presented above, there are other milestones planned, that could be worked on given sufficient development resources. Contributions in these areas would be especially welcome. Once the immediate priority has been addressed, those are good candidates to replace it as the main focus.
 
 #### Basic Usability
 
@@ -48,18 +48,18 @@ For more information, see [the milestone description on GitHub](https://github.c
 
 ### Longer-term Plans
 
-The milestones presented above only include work, that is not blocked by other work that needs to be done first. Beyond that, there is lots more to be done:
+The milestones presented above only include work that is actionable, meaning it is not blocked by something else that needs to be done first. Beyond that, there is lots more to be done:
 
 - **More powerful CAD modeling:** Building on the above milestones to provide more modeling features. First, full support for round things, more flexible sketches, sketching on existing faces; later, hopefully full NURBS surfaces and much more. Nobody knows how far we'll be able to take things, but there are no plans to stop.
 - **More use cases:** The current feature set is mostly geared towards 3D printing, but support for other use cases, like CNC machining, furniture making, or architecture, is planned.
 - **More modeling languages:** Right now, only Rust is supported for CAD modeling, mostly out of convenience. The long-term goal is to provide support for a selection of interoperable modeling languages. It's also likely we'll change the default language from Rust to something more accessible, at some point.
-- **Broad platform support:** Fornjot should be available on all major platforms, including browsers and mobile devices. Not only for editing models, but also by presenting them, for example by embedding a configurable model into a website, or by quickly using your phone to show what you're working on.
-- **Special-purpose CAD:** Using Fornjot to build special-purpose CAD applications, like specialized generators for gears or other configurable components.
+- **Broad platform support:** Fornjot should be available on all major platforms, including browsers and mobile devices. Not only for editing models, but also for presenting them, for example embedding a configurable model into a website, or quickly using your phone to show what you're working on.
+- **Special-purpose CAD:** Using Fornjot to build custom, special-purpose CAD applications; like specialized generators for gears or other configurable components.
 
 This is not an exhaustive list. Please [check out the feature wishlist](https://github.com/hannobraun/Fornjot/discussions/146) for more, and feel free to add your own suggestions.
 
 <div class="call-to-action">
     <p>
-        <strong>Fornjot is an ambitious project.</strong> How much of that ambition can be realized, depends on how sustainable the project can become. If you can, please consider helping out, by <a href="https://github.com/hannobraun/Fornjot">contributing to the project</a>, or by <a href="/sponsor">becoming a sponsor</a>.
+        <strong>Fornjot is an ambitious project.</strong> How much of that ambition can be realized depends on how sustainable the project can become. If you can, please consider helping out, by <a href="https://github.com/hannobraun/Fornjot">contributing to the project</a>, or by <a href="/sponsor">becoming a sponsor</a>.
     </p>
 </div>
