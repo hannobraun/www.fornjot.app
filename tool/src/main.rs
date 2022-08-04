@@ -1,14 +1,31 @@
+mod args;
+mod generate;
+
 use std::collections::BTreeMap;
 
-use chrono::{Date, NaiveDate, Utc};
-use clap::Parser;
+use chrono::{Date, Utc};
 use octocrab::params::{pulls::Sort, Direction, State};
+
+use self::{args::Args, generate::create_release_announcement};
 
 #[tokio::main]
 async fn main() -> anyhow::Result<()> {
-    let args = Args::parse();
-    let last_release_date = Date::from_utc(args.last_release_date, Utc);
+    match Args::parse() {
+        Args::PrintPullRequests(args) => {
+            print_pull_requests_since_last_release(args.last_release_date())
+                .await?;
+        }
+        Args::CreateReleaseAnnouncement => {
+            create_release_announcement().await?;
+        }
+    }
 
+    Ok(())
+}
+
+async fn print_pull_requests_since_last_release(
+    last_release_date: Date<Utc>,
+) -> anyhow::Result<()> {
     let mut pull_requests = BTreeMap::new();
     let mut page = 1u32;
 
@@ -46,9 +63,4 @@ async fn main() -> anyhow::Result<()> {
     }
 
     Ok(())
-}
-
-#[derive(Parser)]
-pub struct Args {
-    pub last_release_date: NaiveDate,
 }
