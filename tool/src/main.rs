@@ -9,6 +9,19 @@ async fn main() -> anyhow::Result<()> {
     let args = Args::parse();
     let last_release_date = Date::from_utc(args.last_release_date, Utc);
 
+    print_pull_requests_since_last_release(last_release_date).await?;
+
+    Ok(())
+}
+
+#[derive(Parser)]
+pub struct Args {
+    pub last_release_date: NaiveDate,
+}
+
+async fn print_pull_requests_since_last_release(
+    last_release_date: Date<Utc>,
+) -> anyhow::Result<()> {
     let mut pull_requests = BTreeMap::new();
     let mut page = 1u32;
 
@@ -46,9 +59,4 @@ async fn main() -> anyhow::Result<()> {
     }
 
     Ok(())
-}
-
-#[derive(Parser)]
-pub struct Args {
-    pub last_release_date: NaiveDate,
 }
