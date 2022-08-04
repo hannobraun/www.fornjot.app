@@ -1,12 +1,12 @@
 mod args;
+mod generate;
 
 use std::collections::BTreeMap;
 
-use chrono::{Date, Datelike, Utc};
+use chrono::{Date, Utc};
 use octocrab::params::{pulls::Sort, Direction, State};
-use tokio::fs::File;
 
-use self::args::Args;
+use self::{args::Args, generate::create_release_announcement};
 
 #[tokio::main]
 async fn main() -> anyhow::Result<()> {
@@ -16,14 +16,7 @@ async fn main() -> anyhow::Result<()> {
                 .await?;
         }
         Args::CreateReleaseAnnouncement => {
-            let now = Utc::now();
-
-            let year = now.year();
-            let week = now.iso_week().week();
-
-            let path =
-                format!("content/blog/weekly-release/{year}-w{week}/index.md");
-            File::create(path).await?;
+            create_release_announcement().await?;
         }
     }
 
