@@ -3,7 +3,6 @@ mod args;
 use std::collections::BTreeMap;
 
 use chrono::{Date, Utc};
-use clap::Parser;
 use octocrab::params::{pulls::Sort, Direction, State};
 
 use self::args::Args;

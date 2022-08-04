@@ -5,6 +5,12 @@ pub enum Args {
     PrintPullRequests(PrintPullRequests),
 }
 
+impl Args {
+    pub fn parse() -> Self {
+        <Self as clap::Parser>::parse()
+    }
+}
+
 #[derive(clap::Parser)]
 pub struct PrintPullRequests {
     pub last_release_date: NaiveDate,
