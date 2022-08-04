@@ -11,9 +11,8 @@ use self::args::Args;
 #[tokio::main]
 async fn main() -> anyhow::Result<()> {
     let args = Args::parse();
-    let last_release_date = Date::from_utc(args.last_release_date, Utc);
 
-    print_pull_requests_since_last_release(last_release_date).await?;
+    print_pull_requests_since_last_release(args.last_release_date()).await?;
 
     Ok(())
 }
