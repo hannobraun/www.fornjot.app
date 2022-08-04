@@ -3,6 +3,7 @@ use chrono::{Date, NaiveDate, Utc};
 #[derive(clap::Parser)]
 pub enum Args {
     PrintPullRequests(PrintPullRequests),
+    CreateReleaseAnnouncement,
 }
 
 impl Args {

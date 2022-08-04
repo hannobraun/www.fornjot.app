@@ -2,8 +2,9 @@ mod args;
 
 use std::collections::BTreeMap;
 
-use chrono::{Date, Utc};
+use chrono::{Date, Datelike, Utc};
 use octocrab::params::{pulls::Sort, Direction, State};
+use tokio::fs::File;
 
 use self::args::Args;
 
@@ -13,6 +14,16 @@ async fn main() -> anyhow::Result<()> {
         Args::PrintPullRequests(args) => {
             print_pull_requests_since_last_release(args.last_release_date())
                 .await?;
+        }
+        Args::CreateReleaseAnnouncement => {
+            let now = Utc::now();
+
+            let year = now.year();
+            let week = now.iso_week().week();
+
+            let path =
+                format!("content/blog/weekly-release/{year}-w{week}/index.md");
+            File::create(path).await?;
         }
     }
 
