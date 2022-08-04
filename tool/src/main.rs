@@ -10,9 +10,12 @@ use self::args::Args;
 
 #[tokio::main]
 async fn main() -> anyhow::Result<()> {
-    let args = Args::parse();
-
-    print_pull_requests_since_last_release(args.last_release_date()).await?;
+    match Args::parse() {
+        Args::PrintPullRequests(args) => {
+            print_pull_requests_since_last_release(args.last_release_date())
+                .await?;
+        }
+    }
 
     Ok(())
 }
