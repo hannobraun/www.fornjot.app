@@ -1,8 +1,12 @@
+mod args;
+
 use std::collections::BTreeMap;
 
-use chrono::{Date, NaiveDate, Utc};
+use chrono::{Date, Utc};
 use clap::Parser;
 use octocrab::params::{pulls::Sort, Direction, State};
+
+use self::args::Args;
 
 #[tokio::main]
 async fn main() -> anyhow::Result<()> {
@@ -12,11 +16,6 @@ async fn main() -> anyhow::Result<()> {
     print_pull_requests_since_last_release(last_release_date).await?;
 
     Ok(())
-}
-
-#[derive(Parser)]
-pub struct Args {
-    pub last_release_date: NaiveDate,
 }
 
 async fn print_pull_requests_since_last_release(
