@@ -8,10 +8,10 @@ pub async fn create_release_announcement() -> anyhow::Result<()> {
     let year = now.year();
     let week = now.iso_week().week();
 
-    let path = format!("content/blog/weekly-release/{year}-w{week}/index.md");
-    File::create(&path)
+    let file = format!("content/blog/weekly-release/{year}-w{week}/index.md");
+    File::create(&file)
         .await
-        .with_context(|| format!("Failed to create file `{path}`"))?;
+        .with_context(|| format!("Failed to create file `{file}`"))?;
 
     Ok(())
 }
