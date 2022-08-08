@@ -3,6 +3,7 @@ mod generate;
 
 use std::collections::BTreeMap;
 
+use anyhow::Context;
 use chrono::{Date, Utc};
 use octocrab::params::{pulls::Sort, Direction, State};
 
@@ -13,10 +14,13 @@ async fn main() -> anyhow::Result<()> {
     match Args::parse() {
         Args::PrintPullRequests(args) => {
             print_pull_requests_since_last_release(args.last_release_date())
-                .await?;
+                .await
+                .context("Failed to print pull requests since last release")?;
         }
         Args::CreateReleaseAnnouncement => {
-            create_release_announcement().await?;
+            create_release_announcement()
+                .await
+                .context("Failed to create release announcement")?;
         }
     }
 
