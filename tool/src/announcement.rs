@@ -1,13 +1,16 @@
 use std::{fmt::Write, path::PathBuf};
 
 use anyhow::Context;
-use chrono::{Datelike, Utc};
+use chrono::{Date, Datelike, Utc};
 use tokio::{
     fs::{self, File},
     io::AsyncWriteExt,
 };
 
+use crate::pull_requests::PullRequest;
+
 pub async fn create_release_announcement(
+    last_release_date: Date<Utc>,
     version: String,
 ) -> anyhow::Result<()> {
     let now = Utc::now();
@@ -15,8 +18,13 @@ pub async fn create_release_announcement(
     let year = now.year();
     let week = now.iso_week().week();
 
+    let pull_requests =
+        PullRequest::fetch_since_last_release(last_release_date)
+            .await?
+            .into_values();
+
     let mut file = create_file(year, week).await?;
-    generate_announcement(week, version, &mut file).await?;
+    generate_announcement(week, version, pull_requests, &mut file).await?;
 
     Ok(())
 }
@@ -39,8 +47,17 @@ async fn create_file(year: i32, week: u32) -> anyhow::Result<File> {
 async fn generate_announcement(
     week: u32,
     version: String,
+    pull_requests: impl IntoIterator<Item = PullRequest>,
     file: &mut File,
 ) -> anyhow::Result<()> {
+    let mut pull_request_links = String::new();
+
+    for PullRequest { number, html_url } in pull_requests {
+        let link = format!("[#{number}]: {html_url}\n");
+
+        pull_request_links.push_str(&link);
+    }
+
     let mut buf = String::new();
     write!(
         buf,
@@ -93,7 +110,9 @@ Improvements that are relevant to developers working on Fornjot itself.
 ### Outlook
 
 **TASK: Write.**
-\
+
+
+{pull_request_links}\
     "
     )?;
 

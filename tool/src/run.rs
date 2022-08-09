@@ -13,7 +13,7 @@ pub async fn run() -> anyhow::Result<()> {
                 .context("Failed to print pull requests since last release")?;
         }
         Args::CreateReleaseAnnouncement(args) => {
-            create_release_announcement(args.version)
+            create_release_announcement(args.last_release_date(), args.version)
                 .await
                 .context("Failed to create release announcement")?;
         }
