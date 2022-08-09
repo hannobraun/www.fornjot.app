@@ -16,7 +16,31 @@ pub async fn create_release_announcement(
     let week = now.iso_week().week();
 
     let mut file = create_file(year, week).await?;
+    generate_announcement(week, version, &mut file).await?;
 
+    Ok(())
+}
+
+async fn create_file(year: i32, week: u32) -> anyhow::Result<File> {
+    let dir =
+        PathBuf::from(format!("content/blog/weekly-release/{year}-w{week}"));
+    let file = dir.join("index.md");
+
+    fs::create_dir_all(&dir).await.with_context(|| {
+        format!("Failed to create directory `{}`", dir.display())
+    })?;
+    let file = File::create(&file).await.with_context(|| {
+        format!("Failed to create file `{}`", file.display())
+    })?;
+
+    Ok(file)
+}
+
+async fn generate_announcement(
+    week: u32,
+    version: String,
+    file: &mut File,
+) -> anyhow::Result<()> {
     let mut buf = String::new();
     write!(
         buf,
@@ -76,19 +100,4 @@ Improvements that are relevant to developers working on Fornjot itself.
     file.write_all(buf.as_bytes()).await?;
 
     Ok(())
-}
-
-async fn create_file(year: i32, week: u32) -> anyhow::Result<File> {
-    let dir =
-        PathBuf::from(format!("content/blog/weekly-release/{year}-w{week}"));
-    let file = dir.join("index.md");
-
-    fs::create_dir_all(&dir).await.with_context(|| {
-        format!("Failed to create directory `{}`", dir.display())
-    })?;
-    let file = File::create(&file).await.with_context(|| {
-        format!("Failed to create file `{}`", file.display())
-    })?;
-
-    Ok(file)
 }
