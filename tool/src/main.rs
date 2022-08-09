@@ -1,5 +1,5 @@
+mod announcement;
 mod args;
-mod generate;
 mod pull_requests;
 mod run;
 

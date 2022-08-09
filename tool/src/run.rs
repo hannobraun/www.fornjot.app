@@ -1,7 +1,7 @@
 use anyhow::Context;
 
 use crate::{
-    args::Args, generate::create_release_announcement,
+    announcement::create_release_announcement, args::Args,
     pull_requests::print_pull_requests_since_last_release,
 };
 
