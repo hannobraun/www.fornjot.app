@@ -39,7 +39,7 @@ async fn print_pull_requests_since_last_release(
             .pulls("hannobraun", "Fornjot")
             .list()
             .state(State::Closed)
-            .sort(Sort::Created)
+            .sort(Sort::Updated)
             .direction(Direction::Descending)
             .per_page(100) // this is the maximum number of results per page
             .page(page)
