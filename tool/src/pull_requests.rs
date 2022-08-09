@@ -44,7 +44,6 @@ pub async fn fetch_pull_requests_since_last_release(
 
         for pull_request in pull_request_page.items {
             if let Some(updated_at) = pull_request.updated_at {
-                dbg!(updated_at);
                 if updated_at.date() < last_release_date {
                     // This pull request has been updated before the last
                     // release. Since we sort pull requests by
