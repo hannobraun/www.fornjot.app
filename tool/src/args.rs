@@ -3,7 +3,7 @@ use chrono::{Date, NaiveDate, Utc};
 #[derive(clap::Parser)]
 pub enum Args {
     PrintPullRequests(PrintPullRequests),
-    CreateReleaseAnnouncement,
+    CreateReleaseAnnouncement(CreateReleaseAnnouncement),
 }
 
 impl Args {
@@ -21,4 +21,9 @@ impl PrintPullRequests {
     pub fn last_release_date(&self) -> Date<Utc> {
         Date::from_utc(self.last_release_date, Utc)
     }
+}
+
+#[derive(clap::Parser)]
+pub struct CreateReleaseAnnouncement {
+    pub version: String,
 }

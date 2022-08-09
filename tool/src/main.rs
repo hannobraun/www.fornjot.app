@@ -17,7 +17,7 @@ async fn main() -> anyhow::Result<()> {
                 .await
                 .context("Failed to print pull requests since last release")?;
         }
-        Args::CreateReleaseAnnouncement => {
+        Args::CreateReleaseAnnouncement(_) => {
             create_release_announcement()
                 .await
                 .context("Failed to create release announcement")?;
