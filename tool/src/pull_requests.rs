@@ -2,10 +2,8 @@ use std::collections::BTreeMap;
 
 use anyhow::anyhow;
 use chrono::{Date, Utc};
-use octocrab::{
-    models::pulls::PullRequest,
-    params::{pulls::Sort, Direction, State},
-};
+use octocrab::params::{pulls::Sort, Direction, State};
+use url::Url;
 
 pub async fn print_pull_requests_since_last_release(
     last_release_date: Date<Utc>,
@@ -14,13 +12,15 @@ pub async fn print_pull_requests_since_last_release(
         fetch_pull_requests_since_last_release(last_release_date).await?;
 
     for (_, pull_request) in pull_requests {
-        let url = pull_request
-            .html_url
-            .ok_or_else(|| anyhow!("Pull request is missing URL"))?;
-        println!("{}", url);
+        println!("{}", pull_request.html_url);
     }
 
     Ok(())
+}
+
+pub struct PullRequest {
+    pub number: u64,
+    pub html_url: Url,
 }
 
 pub async fn fetch_pull_requests_since_last_release(
@@ -56,6 +56,13 @@ pub async fn fetch_pull_requests_since_last_release(
 
             if let Some(merged_at) = pull_request.merged_at {
                 if merged_at.date() >= last_release_date {
+                    let number = pull_request.number;
+                    let html_url = pull_request.html_url.ok_or_else(|| {
+                        anyhow!("Pull request is missing URL")
+                    })?;
+
+                    let pull_request = PullRequest { number, html_url };
+
                     pull_requests.insert(pull_request.number, pull_request);
                 }
             }
