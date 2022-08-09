@@ -9,7 +9,8 @@ pub async fn print_pull_requests_since_last_release(
     last_release_date: Date<Utc>,
 ) -> anyhow::Result<()> {
     let pull_requests =
-        fetch_pull_requests_since_last_release(last_release_date).await?;
+        PullRequest::fetch_pull_requests_since_last_release(last_release_date)
+            .await?;
 
     for (_, pull_request) in pull_requests {
         println!("{}", pull_request.html_url);
@@ -23,57 +24,60 @@ pub struct PullRequest {
     pub html_url: Url,
 }
 
-pub async fn fetch_pull_requests_since_last_release(
-    last_release_date: Date<Utc>,
-) -> anyhow::Result<BTreeMap<u64, PullRequest>> {
-    let mut pull_requests = BTreeMap::new();
-    let mut page = 1u32;
+impl PullRequest {
+    pub async fn fetch_pull_requests_since_last_release(
+        last_release_date: Date<Utc>,
+    ) -> anyhow::Result<BTreeMap<u64, Self>> {
+        let mut pull_requests = BTreeMap::new();
+        let mut page = 1u32;
 
-    'outer: loop {
-        println!("Fetching page {}...", page);
-        let pull_request_page = octocrab::instance()
-            .pulls("hannobraun", "Fornjot")
-            .list()
-            .state(State::Closed)
-            .sort(Sort::Updated)
-            .direction(Direction::Descending)
-            .per_page(100) // this is the maximum number of results per page
-            .page(page)
-            .send()
-            .await?;
+        'outer: loop {
+            println!("Fetching page {}...", page);
+            let pull_request_page = octocrab::instance()
+                .pulls("hannobraun", "Fornjot")
+                .list()
+                .state(State::Closed)
+                .sort(Sort::Updated)
+                .direction(Direction::Descending)
+                .per_page(100) // this is the maximum number of results per page
+                .page(page)
+                .send()
+                .await?;
 
-        for pull_request in pull_request_page.items {
-            if let Some(updated_at) = pull_request.updated_at {
-                if updated_at.date() < last_release_date {
-                    // This pull request has been updated before the last
-                    // release. Since we sort pull requests by
-                    // updated-descending, that means all following pull
-                    // requests have been updated before the last release, and
-                    // thus couldn't have been merged after.
-                    break 'outer;
+            for pull_request in pull_request_page.items {
+                if let Some(updated_at) = pull_request.updated_at {
+                    if updated_at.date() < last_release_date {
+                        // This pull request has been updated before the last
+                        // release. Since we sort pull requests by
+                        // updated-descending, that means all following pull
+                        // requests have been updated before the last release,
+                        // and thus couldn't have been merged after.
+                        break 'outer;
+                    }
+                }
+
+                if let Some(merged_at) = pull_request.merged_at {
+                    if merged_at.date() >= last_release_date {
+                        let number = pull_request.number;
+                        let html_url =
+                            pull_request.html_url.ok_or_else(|| {
+                                anyhow!("Pull request is missing URL")
+                            })?;
+
+                        let pull_request = Self { number, html_url };
+
+                        pull_requests.insert(pull_request.number, pull_request);
+                    }
                 }
             }
 
-            if let Some(merged_at) = pull_request.merged_at {
-                if merged_at.date() >= last_release_date {
-                    let number = pull_request.number;
-                    let html_url = pull_request.html_url.ok_or_else(|| {
-                        anyhow!("Pull request is missing URL")
-                    })?;
-
-                    let pull_request = PullRequest { number, html_url };
-
-                    pull_requests.insert(pull_request.number, pull_request);
-                }
+            if pull_request_page.next.is_some() {
+                page += 1;
+            } else {
+                break;
             }
         }
 
-        if pull_request_page.next.is_some() {
-            page += 1;
-        } else {
-            break;
-        }
+        Ok(pull_requests)
     }
-
-    Ok(pull_requests)
 }
