@@ -1,5 +1,6 @@
 use std::collections::BTreeMap;
 
+use anyhow::anyhow;
 use chrono::{Date, Utc};
 use octocrab::params::{pulls::Sort, Direction, State};
 
@@ -50,7 +51,9 @@ pub async fn print_pull_requests_since_last_release(
     }
 
     for (_, pull_request) in pull_requests {
-        let url = pull_request.html_url.expect("Pull request is missing URL");
+        let url = pull_request
+            .html_url
+            .ok_or_else(|| anyhow!("Pull request is missing URL"))?;
         println!("{}", url);
     }
 
