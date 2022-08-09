@@ -2,11 +2,30 @@ use std::collections::BTreeMap;
 
 use anyhow::anyhow;
 use chrono::{Date, Utc};
-use octocrab::params::{pulls::Sort, Direction, State};
+use octocrab::{
+    models::pulls::PullRequest,
+    params::{pulls::Sort, Direction, State},
+};
 
 pub async fn print_pull_requests_since_last_release(
     last_release_date: Date<Utc>,
 ) -> anyhow::Result<()> {
+    let pull_requests =
+        fetch_pull_requests_since_last_release(last_release_date).await?;
+
+    for (_, pull_request) in pull_requests {
+        let url = pull_request
+            .html_url
+            .ok_or_else(|| anyhow!("Pull request is missing URL"))?;
+        println!("{}", url);
+    }
+
+    Ok(())
+}
+
+pub async fn fetch_pull_requests_since_last_release(
+    last_release_date: Date<Utc>,
+) -> anyhow::Result<BTreeMap<u64, PullRequest>> {
     let mut pull_requests = BTreeMap::new();
     let mut page = 1u32;
 
@@ -50,12 +69,5 @@ pub async fn print_pull_requests_since_last_release(
         }
     }
 
-    for (_, pull_request) in pull_requests {
-        let url = pull_request
-            .html_url
-            .ok_or_else(|| anyhow!("Pull request is missing URL"))?;
-        println!("{}", url);
-    }
-
-    Ok(())
+    Ok(pull_requests)
 }
