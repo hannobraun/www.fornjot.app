@@ -5,19 +5,6 @@ use chrono::{Date, Utc};
 use octocrab::params::{pulls::Sort, Direction, State};
 use url::Url;
 
-pub async fn print_pull_requests_since_last_release(
-    last_release_date: Date<Utc>,
-) -> anyhow::Result<()> {
-    let pull_requests =
-        PullRequest::fetch_since_last_release(last_release_date).await?;
-
-    for (_, pull_request) in pull_requests {
-        println!("{}", pull_request.html_url);
-    }
-
-    Ok(())
-}
-
 pub struct PullRequest {
     pub number: u64,
     pub html_url: Url,
