@@ -9,8 +9,7 @@ pub async fn print_pull_requests_since_last_release(
     last_release_date: Date<Utc>,
 ) -> anyhow::Result<()> {
     let pull_requests =
-        PullRequest::fetch_pull_requests_since_last_release(last_release_date)
-            .await?;
+        PullRequest::fetch_since_last_release(last_release_date).await?;
 
     for (_, pull_request) in pull_requests {
         println!("{}", pull_request.html_url);
@@ -25,7 +24,7 @@ pub struct PullRequest {
 }
 
 impl PullRequest {
-    pub async fn fetch_pull_requests_since_last_release(
+    pub async fn fetch_since_last_release(
         last_release_date: Date<Utc>,
     ) -> anyhow::Result<BTreeMap<u64, Self>> {
         let mut pull_requests = BTreeMap::new();
