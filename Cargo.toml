@@ -1,3 +1,0 @@
-[workspace]
-members = ["tool"]
-default-members = ["tool"]
