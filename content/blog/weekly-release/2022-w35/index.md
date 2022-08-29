@@ -1,5 +1,6 @@
 +++
 title = "Weekly Release - 2022-W35"
+date = 2022-08-29
 
 [extra]
 version = "0.13.0"
