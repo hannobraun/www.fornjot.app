@@ -45,6 +45,12 @@ Between modeling features and general UI usability sits this milestone: UI issue
 
 For more information, see [the milestone description on GitHub](https://github.com/hannobraun/Fornjot/milestone/4).
 
+#### 2D CAD
+
+Laser cutting, water jet cutting, engraving... there are good reasons to create a 2D CAD model and export it to a specialized 2D file format.
+
+For more information, see [the milestone description on GitHub](https://github.com/hannobraun/Fornjot/milestone/5).
+
 
 ### Longer-term Plans
 
