@@ -57,8 +57,8 @@ For more information, see [the milestone description on GitHub](https://github.c
 The milestones presented above only include work that is actionable, meaning it is not blocked by something else that needs to be done first. Beyond that, there is lots more to be done:
 
 - **More powerful CAD modeling:** Building on the above milestones to provide more modeling features. First, full support for round things, more flexible sketches, sketching on existing faces; later, hopefully full NURBS surfaces and much more. Nobody knows how far we'll be able to take things, but there are no plans to stop.
-- **More use cases:** The current feature set is mostly geared towards 3D printing, but support for other use cases, like CNC machining, 2D CAD (engraving, laser cutting, waterjet, etc.), furniture making, or architecture, is planned.
-- **More modeling languages:** Right now, only Rust is supported for CAD modeling, mostly because it was the easiest to support. The long-term goal is to provide support for a selection of interoperable modeling languages.
+- **More use cases:** The current feature set is mostly geared towards 3D printing, but support for other use cases, like CNC machining, furniture making, or architecture, is desirable.
+- **More modeling languages:** Right now, only Rust is supported for CAD modeling, mostly because it is the easiest to support. The long-term goal is to provide support for a selection of interoperable modeling languages.
 - **Broad platform support:** Fornjot should be available on all major platforms, including browsers and mobile devices. Not only for editing models, but also for presenting them, for example embedding a configurable model into a website, or quickly using your phone to show what you're working on.
 - **Special-purpose CAD:** Using Fornjot to build custom, special-purpose CAD applications; like specialized generators for gears or other configurable components.
 
