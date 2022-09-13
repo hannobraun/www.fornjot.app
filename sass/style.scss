@@ -25,8 +25,8 @@ $size-reduced: 85%;
     padding: $padding;
 }
 
-@mixin call-to-action($padding) {
-    @include box($color-emphasis-heavy, $margin-default, $padding);
+@mixin call-to-action() {
+    @include box($color-emphasis-heavy, $margin-default, $margin-default * 0.5);
 
     display: block;
     max-width: fit-content;
@@ -171,7 +171,7 @@ body {
         }
 
         .call-to-action {
-            @include call-to-action($margin-default);
+            @include call-to-action();
         }
     }
 
@@ -193,7 +193,7 @@ body {
         }
 
         strong.call-to-action {
-            @include call-to-action($margin-default * 0.5);
+            @include call-to-action();
         }
     }
 }
