@@ -1,25 +1,25 @@
 $color-normal: #333333;
 $color-strong: #222222;
 $color-titles: #111111;
-$color-links:  #0880e8;
+$color-links: #0880e8;
 
 $color-emphasis-heavy: #ffff80;
 $color-emphasis-light: #f8f8f8;
 
-$width-content:  42rem;
-$width-narrow:   30rem;
+$width-content: 42rem;
+$width-narrow: 30rem;
 $margin-default: 1rem;
-$margin-wide:    3rem;
-$margin-narrow:  0.25rem;
+$margin-wide: 3rem;
+$margin-narrow: 0.25rem;
 
 $border-radius: 0.25rem;
-$size-reduced:  85%;
+$size-reduced: 85%;
 
 
 @mixin box($color, $margin, $padding: $margin-default) {
     margin: $margin auto;
 
-    border-radius:    $border-radius;
+    border-radius: $border-radius;
     background-color: $color;
 
     padding: $padding;
@@ -28,7 +28,7 @@ $size-reduced:  85%;
 @mixin call-to-action($padding) {
     @include box($color-emphasis-heavy, $margin-default, $padding);
 
-    display:   block;
+    display: block;
     max-width: fit-content;
 
     p {
@@ -39,13 +39,13 @@ $size-reduced:  85%;
 
 body {
     font-family: Arial, sans-serif;
-    color:       $color-normal;
+    color: $color-normal;
 
     max-width: $width-content;
-    margin:    0 auto;
+    margin: 0 auto;
 
-    > header {
-        display:        flex;
+    >header {
+        display: flex;
         flex-direction: column;
 
         margin-bottom: $margin-wide;
@@ -55,12 +55,12 @@ body {
 
             h1 {
                 margin-bottom: 0;
-                font-size:     250%;
+                font-size: 250%;
             }
 
             h2 {
                 margin-top: 0;
-                font-size:  100%;
+                font-size: 100%;
             }
         }
 
@@ -72,7 +72,7 @@ body {
             ul {
                 list-style-type: none;
 
-                margin-top:    $margin-narrow;
+                margin-top: $margin-narrow;
                 margin-bottom: $margin-narrow;
 
                 padding: 0;
@@ -85,7 +85,7 @@ body {
 
                         color: $color-strong;
 
-                        padding:       $margin-narrow;
+                        padding: $margin-narrow;
                         border-radius: $border-radius;
                     }
                 }
@@ -118,7 +118,7 @@ body {
         }
     }
 
-    > main {
+    >main {
         header {
             margin-bottom: $margin-default;
 
@@ -130,9 +130,9 @@ body {
         aside {
             @include box($color-emphasis-heavy, $margin-default);
 
-            max-width:  fit-content;
+            max-width: fit-content;
             font-style: italic;
-            font-size:  $size-reduced;
+            font-size: $size-reduced;
 
             p:first-child {
                 margin-top: 0;
@@ -144,17 +144,18 @@ body {
         }
 
         h3 {
-            margin-top:    $margin-default * 2;
+            margin-top: $margin-default * 2;
             margin-bottom: $margin-default;
         }
 
         p {
-            margin-top:    $margin-default;
+            margin-top: $margin-default;
             margin-bottom: 0;
         }
 
-        ol, ul {
-            margin-top:    $margin-default / 2;
+        ol,
+        ul {
+            margin-top: $margin-default / 2;
             margin-bottom: 0;
 
             li {
@@ -174,20 +175,20 @@ body {
         }
     }
 
-    > footer {
-        margin-top:    $margin-wide;
+    >footer {
+        margin-top: $margin-wide;
         margin-bottom: $margin-wide;
 
         font-size: 80%;
 
-        display:        flex;
+        display: flex;
         flex-direction: column;
-        align-items:    center;
+        align-items: center;
 
         hr {
             width: 100%;
 
-            margin-top:    $margin-wide;
+            margin-top: $margin-wide;
             margin-bottom: $margin-wide;
         }
 
@@ -197,7 +198,12 @@ body {
     }
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     color: $color-titles;
 }
 
@@ -206,7 +212,7 @@ strong {
 }
 
 a {
-    color:       $color-links;
+    color: $color-links;
     font-weight: bold;
 }
 
@@ -228,7 +234,7 @@ form.newsletter {
     }
 
     input[type=email] {
-        width:      100%;
+        width: 100%;
         box-sizing: border-box
     }
 
@@ -240,11 +246,11 @@ form.newsletter {
             border: 0 none;
 
             border-radius: $border-radius;
-            padding:       $margin-narrow * 2 $margin-default;
+            padding: $margin-narrow * 2 $margin-default;
 
             font-weight: bold;
 
-            color:            #ffffff;
+            color: #ffffff;
             background-color: #444444;
         }
     }
@@ -252,7 +258,7 @@ form.newsletter {
 
 ol.blog {
     list-style-type: none;
-    padding:         0;
+    padding: 0;
 
     li {
         margin-bottom: $margin-default;
@@ -274,13 +280,16 @@ article.blog-post {
             margin-top: 0;
         }
 
-        th, td {
+        th,
+        td {
             vertical-align: text-top;
             padding: $margin-narrow;
         }
 
         td {
-            p, ul {
+
+            p,
+            ul {
                 margin: 0;
             }
 
@@ -302,5 +311,5 @@ span.metadata {
 ul.toc {
     @include box($color-emphasis-light, $margin-default);
 
-    list-style-type:  none;
+    list-style-type: none;
 }
