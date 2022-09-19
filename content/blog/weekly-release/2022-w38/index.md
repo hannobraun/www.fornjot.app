@@ -1,7 +1,6 @@
 +++
 title = "Weekly Release - 2022-W38"
-# TASK: Uncomment this date, once the announcement is ready to be published.
-# date = 2022-09-19
+date = 2022-09-19
 
 [extra]
 version = "0.16.0"
