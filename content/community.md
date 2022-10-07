@@ -44,7 +44,7 @@ To join the Fornjot project as a developer, please fork one of the GitHub reposi
 - [Main Fornjot repository](https://github.com/hannobraun/Fornjot)
 - [Website repository](https://github.com/hannobraun/www.fornjot.app)
 
-If you need some guidance, check out the [contribution guide](https://github.com/hannobraun/Fornjot/blob/main/CONTRIBUTING.md).
+If you need some guidance, feel free to check out the [contribution guide](https://github.com/hannobraun/Fornjot/blob/main/CONTRIBUTING.md).
 
 
 [Matrix channel]: https://matrix.to/#/#fornjot:braun-odw.eu
