@@ -5,11 +5,25 @@ title = "Community"
 If you are interested in Fornjot, please consider joining the community. We'd love to have you!
 
 
+### News
+
+If you want to follow along Fornjot's progress, there are various ways to do that.
+
+Weekly release announcements:
+- [Blog](/blog) (also includes other articles)
+- [Rust Users thread](https://users.rust-lang.org/t/fornjot-code-first-cad-in-rust-weekly-release/71783)
+- [Reddit](https://www.reddit.com/user/hannobraun)
+
+Day-to-day development updates:
+- [Matrix channel]
+- [Twitter](https://twitter.com/hannobraun)
+
+
 ### Questions, Feedback, Discussions
 
 The following venues are best-suited for questions, feedback, or general discussions:
 
-- [Matrix channel](https://matrix.to/#/#fornjot:braun-odw.eu)
+- [Matrix channel]
 - [GitHub Discussions](https://github.com/hannobraun/Fornjot/discussions)
 
 
@@ -30,4 +44,7 @@ To join the Fornjot project as a developer, please fork one of the GitHub reposi
 - [Main Fornjot repository](https://github.com/hannobraun/Fornjot)
 - [Website repository](https://github.com/hannobraun/www.fornjot.app)
 
-If you need some guidance, check out the [contribution guide](https://github.com/hannobraun/Fornjot/blob/main/CONTRIBUTING.md).
+If you need some guidance, feel free to check out the [contribution guide](https://github.com/hannobraun/Fornjot/blob/main/CONTRIBUTING.md).
+
+
+[Matrix channel]: https://matrix.to/#/#fornjot:braun-odw.eu
