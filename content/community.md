@@ -9,7 +9,7 @@ If you are interested in Fornjot, please consider joining the community. We'd lo
 
 The following venues are best-suited for questions, feedback, or general discussions:
 
-- [Matrix channel](https://matrix.to/#/#fornjot:braun-odw.eu)
+- [Matrix channel]
 - [GitHub Discussions](https://github.com/hannobraun/Fornjot/discussions)
 
 
@@ -31,3 +31,6 @@ To join the Fornjot project as a developer, please fork one of the GitHub reposi
 - [Website repository](https://github.com/hannobraun/www.fornjot.app)
 
 If you need some guidance, check out the [contribution guide](https://github.com/hannobraun/Fornjot/blob/main/CONTRIBUTING.md).
+
+
+[Matrix channel]: https://matrix.to/#/#fornjot:braun-odw.eu
