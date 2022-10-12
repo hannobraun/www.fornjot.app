@@ -11,6 +11,9 @@
         {% for page in section.pages %}
             <li>
                 <h3><a href="{{ page.path }}">{{ page.title }}</a></h3>
+                {% if page.extra.subtitle %}
+                    <h4>{{ page.extra.subtitle }}</h4>
+                {% endif %}
                 {{ blog::metadata(post=page) }}
             </li>
         {% endfor %}
