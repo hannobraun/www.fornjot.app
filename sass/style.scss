@@ -263,6 +263,20 @@ ol.blog {
     li {
         margin-bottom: $margin-default;
 
+        h3 {
+            font-size: medium;
+            margin: 0;
+        }
+
+        h4 {
+            font-size: medium;
+            font-weight: normal;
+
+            margin: 0;
+            margin-top: $margin-narrow;
+            margin-left: $margin-narrow;
+        }
+
         span.metadata {
             margin-left: $margin-default;
         }
