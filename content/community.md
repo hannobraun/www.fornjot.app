@@ -16,6 +16,7 @@ Weekly release announcements:
 
 Day-to-day development updates:
 - [Matrix channel]
+- [Mastodon](https://fosstodon.org/@hannobraun)
 - [Twitter](https://twitter.com/hannobraun)
 
 
