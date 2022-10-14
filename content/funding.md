@@ -1,5 +1,5 @@
 +++
-title = "Sponsor"
+title = "Funding"
 +++
 
 Hey, it's me, [Hanno Braun](https://github.com/hannobraun), Fornjot's creator, maintainer, and main developer. I am accepting sponsorships to help me push the project forward. **Thank you for considering to help out!**
