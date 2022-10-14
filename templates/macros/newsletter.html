@@ -1,15 +1,17 @@
-{% macro form() %}
+{% macro form(emphasis, description) %}
     <form
-        class="newsletter"
+        class="newsletter {{ emphasis }}"
         method="POST"
         action="https://static.mailerlite.com/webforms/submit/b3p2x0"
         data-code="b3p2x0"
         target="_blank">
 
         <h2>Newsletter</h2>
-        <p>
-            Want to stay up-to-date with Fornjot? Sign up to receive weekly release announcements, as well as some unscheduled messages from time to time, per email!
-        </p>
+        {% if description %}
+            <p>
+                Want to stay up-to-date with Fornjot? Sign up to receive weekly release announcements, as well as some unscheduled messages from time to time, per email!
+            </p>
+        {% endif %}
 
         <input type="hidden" name="ml-submit" value="1" />
         <input type="hidden" name="anticsrf" value="true" />
