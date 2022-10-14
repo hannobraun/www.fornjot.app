@@ -29,7 +29,7 @@ First, to be clear, at this point Fornjot is at a much earlier stage of developm
 Long-term, I see the following opportunities to improve on CadQuery:
 
 - Experimentation on the CAD kernel side. The only big open source b-rep kernel is [Open CASCADE](https://www.opencascade.com/open-cascade-technology/), and I think it's fair to take a fresh look at the problem.
-- Provide broader platform support. Fornjot is written in Rust, which makes it practical to support all major desktop and mobile platforms, and also in the browser.
+- Provide broader platform support. Fornjot is written in Rust, which makes it practical to support all major desktop and mobile platforms, as well as browsers.
 - Provide alternatives in regard to modeling languages. Rust is different enough from Python to provide an interesting alternative that is going to be better for some use cases. And Fornjot is architected to be language-agnostic, so long-term, it's possible to support a whole selection of interoperable modeling languages.
 
 
