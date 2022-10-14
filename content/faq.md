@@ -29,8 +29,30 @@ First, to be clear, at this point Fornjot is at a much earlier stage of developm
 Long-term, I see the following opportunities to improve on CadQuery:
 
 - Experimentation on the CAD kernel side. The only big open source b-rep kernel is [Open CASCADE](https://www.opencascade.com/open-cascade-technology/), and I think it's fair to take a fresh look at the problem.
-- Provide broader platform support. Fornjot is written in Rust, which makes it practical to support all major desktop and mobile platforms, and also in the browser.
+- Provide broader platform support. Fornjot is written in Rust, which makes it practical to support all major desktop and mobile platforms, as well as browsers.
 - Provide alternatives in regard to modeling languages. Rust is different enough from Python to provide an interesting alternative that is going to be better for some use cases. And Fornjot is architected to be language-agnostic, so long-term, it's possible to support a whole selection of interoperable modeling languages.
+
+
+### Will Fornjot support my use case? {#use-case}
+
+**Short answer:** If your use case falls into the making/manufacturing area, then most likely yes. If not, maybe; hard to say.
+
+**Long answer:**
+
+"CAD" is a rather generic concept that can be applied to a multitude of use cases: 3D printing, machining, laser cutting, plasma cutting, water-jet cutting, engraving, woodworking, architecture, civil engineering, and many more. Each use case has its own set of features that it requires, and its own set of file formats that it needs to export CAD models to.
+
+Creating a CAD program (especially one with a custom kernel) is already a huge amount of work. Supporting every specific use case on top of that might just not be practical. So far, we've been able to dodge the question for the most part. At this early stage, we are still working on technical foundations that could be used to support any of the aforementioned use cases, and more.
+
+So which use cases will Fornjot support? Well, that's going to depend on whether developers will be available to do the required work:
+
+- *Contributions:* Fornjot is an open source project that is open to everyone. If a horde of developer who are all interested in civil engineering, for example, start contributing to the project, then Fornjot might become very usable in that area. If that doesn't happen, it might not.
+- *Funding:* If there is demand from a specific target market, and that target market is willing and able to [provide funding](/funding), then development effort can be allocated accordingly.
+
+So we really can't know right now. However, there are a few things that we do know:
+
+- So far, Fornjot is capable of supporting the 3D printing use case and not much else. (It's still early days!)
+- Currently, interest comes mostly from the making/manufacturing areas. It looks likely that this will be the core focus for Fornjot.
+- Everything else is going to depend on how successful the project can become. If it attracts a lot of developers, it can grow beyond this core focus. If it doesn't, then it can't.
 
 
 ### Is Rust really the right language to define CAD models in? {#rust}
