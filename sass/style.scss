@@ -220,9 +220,15 @@ code:not(.language-rust) {
     background-color: #f0f0f0;
 }
 
-form.newsletter {
+form.newsletter.emphasis-heavy {
     @include box($color-emphasis-heavy, $margin-wide);
+}
 
+form.newsletter.emphasis-light {
+    @include box($color-emphasis-light, $margin-wide);
+}
+
+form.newsletter {
     max-width: $width-narrow;
 
     h2 {
