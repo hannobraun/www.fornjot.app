@@ -5,5 +5,5 @@
 {% block main %}
     {{ section.content | safe }}
 
-    {{ newsletter::form(emphasis="emphasis-heavy") }}
+    {{ newsletter::form(emphasis="emphasis-heavy", description=true) }}
 {% endblock %}
