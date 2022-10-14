@@ -19,6 +19,10 @@ Day-to-day development updates:
 - [Mastodon](https://fosstodon.org/@hannobraun)
 - [Twitter](https://twitter.com/hannobraun)
 
+Finally, there is the email newsletter, which receives mostly the same updates as the blog. You can sign up here:
+
+{{ newsletter_form() }}
+
 
 ### Questions, Feedback, Discussions
 
