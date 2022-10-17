@@ -1,7 +1,6 @@
 +++
 title = "Weekly Release - Making Room for Distractions"
-# TASK: Uncomment this date, once the announcement is ready to be published.
-# date = 2022-10-17
+date = 2022-10-17
 
 # Uncomment to generate the HTML for the email newsletter.
 # template = "newsletter/weekly-release.html"
