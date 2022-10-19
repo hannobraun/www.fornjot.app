@@ -7,7 +7,7 @@
         <title>{{ page.title }}</title>
 
         <style>
-            body {
+            .email {
                 font-family: Arial, sans-serif;
                 color:       #111111;
 
@@ -16,12 +16,12 @@
                 margin-right: auto;
             }
 
-            body header, body footer {
+            .email .header, .email .footer {
                 font-size:  85%;
                 font-style: italic;
             }
 
-            body header {
+            .email .header {
                 max-width:    85%;
                 margin-left:  auto;
                 margin-right: auto;
@@ -31,26 +31,26 @@
                 margin-bottom: 2rem;
             }
 
-            body header .preview-text {
+            .email .header .preview-text {
                 display: none;
             }
 
-            body main h3 {
+            .email .main h3 {
                 margin-top:    2rem;
                 margin-bottom: 1rem;
             }
 
-            body main p {
+            .email .main p {
                 margin-top:    1rem;
                 margin-bottom: 0;
             }
 
-            body main ol, body main ul {
+            .email .main ol, .email .main ul {
                 margin-top:    0.5rem;
                 margin-bottom: 0;
             }
 
-            body main strong.call-to-action {
+            .email .main strong.call-to-action {
                 display: block;
 
                 margin: 1rem auto;
@@ -60,16 +60,16 @@
                 background-color: #ffff80;
             }
 
-            body main strong.call-to-action p {
+            .email .main strong.call-to-action p {
                 margin-top: 0;
             }
 
-            body footer {
+            .email .footer {
                 margin-top:    4rem;
                 margin-bottom: 4rem;
             }
 
-            body footer div {
+            .email .footer div {
                 margin-top:    2rem;
                 margin-bottom: 2rem;
 
@@ -78,7 +78,7 @@
                 margin-right: auto;
             }
 
-            body footer div.unsubscribe {
+            .email .footer div.unsubscribe {
                 text-align: center;
             }
 
@@ -93,40 +93,42 @@
         </style>
     </head>
     <body>
-        <header>
-            {% if page.extra.subtitle %}
-                <div class="preview-text">{{ page.extra.subtitle }}</div>
-            {% endif %}
+        <div class="email">
+            <div class="header">
+                {% if page.extra.subtitle %}
+                    <div class="preview-text">{{ page.extra.subtitle }}</div>
+                {% endif %}
 
-            <p>
-                Fornjot is an early-stage project to create a next-generation, code-first CAD application. You are receiving this email because you signed up for the newsletter at the <a href="https://www.fornjot.app/">Fornjot website</a>. Please check the bottom of this email for more information, and a link to unsubscribe.
-            </p>
-
-            {% block header %}{% endblock %}
-        </header>
-        <main>
-            {{ page.content | safe }}
-        </main>
-        <footer>
-            <div class="address">
-                <p>This email was sent by me:</p>
-                <address>
-                    <strong>Hanno Braun</strong><br />
-                    <br />
-                    Untere Pfarrgasse 19<br />
-                    64720 Michelstadt<br />
-                    Germany<br />
-                    <br />
-                    <a href="mailto:hanno@braun-odw.eu">hanno@braun-odw.eu</a><br />
-                    <a href="https://matrix.to/#/@hanno:braun-odw.eu">@hanno:braun-odw.eu</a>
-                </address>
-            </div>
-            <div class="unsubscribe">
                 <p>
-                    You received this email because you signed up for this newsletter at the <a href="https://www.fornjot.app/">Fornjot website</a>. If you no longer want to receive these emails, please click the "Unsubscribe" link below.
+                    Fornjot is an early-stage project to create a next-generation, code-first CAD application. You are receiving this email because you signed up for the newsletter at the <a href="https://www.fornjot.app/">Fornjot website</a>. Please check the bottom of this email for more information, and a link to unsubscribe.
                 </p>
-                <a href="{$unsubscribe}">Unsubscribe</a>
+
+                {% block header %}{% endblock %}
             </div>
-        </footer>
+            <div class="main">
+                {{ page.content | safe }}
+            </div>
+            <div class="footer">
+                <div class="address">
+                    <p>This email was sent by me:</p>
+                    <address>
+                        <strong>Hanno Braun</strong><br />
+                        <br />
+                        Untere Pfarrgasse 19<br />
+                        64720 Michelstadt<br />
+                        Germany<br />
+                        <br />
+                        <a href="mailto:hanno@braun-odw.eu">hanno@braun-odw.eu</a><br />
+                        <a href="https://matrix.to/#/@hanno:braun-odw.eu">@hanno:braun-odw.eu</a>
+                    </address>
+                </div>
+                <div class="unsubscribe">
+                    <p>
+                        You received this email because you signed up for this newsletter at the <a href="https://www.fornjot.app/">Fornjot website</a>. If you no longer want to receive these emails, please click the "Unsubscribe" link below.
+                    </p>
+                    <a href="{$unsubscribe}">Unsubscribe</a>
+                </div>
+            </div>
+        </div>
     </body>
 </html>
