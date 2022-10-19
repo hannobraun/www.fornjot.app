@@ -16,12 +16,12 @@
                 margin-right: auto;
             }
 
-            .email header, .email footer {
+            .email .header, .email footer {
                 font-size:  85%;
                 font-style: italic;
             }
 
-            .email header {
+            .email .header {
                 max-width:    85%;
                 margin-left:  auto;
                 margin-right: auto;
@@ -31,7 +31,7 @@
                 margin-bottom: 2rem;
             }
 
-            .email header .preview-text {
+            .email .header .preview-text {
                 display: none;
             }
 
@@ -94,7 +94,7 @@
     </head>
     <body>
         <div class="email">
-            <header>
+            <div class="header">
                 {% if page.extra.subtitle %}
                     <div class="preview-text">{{ page.extra.subtitle }}</div>
                 {% endif %}
@@ -104,7 +104,7 @@
                 </p>
 
                 {% block header %}{% endblock %}
-            </header>
+            </div>
             <div class="main">
                 {{ page.content | safe }}
             </div>
