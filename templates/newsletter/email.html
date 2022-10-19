@@ -16,7 +16,7 @@
                 margin-right: auto;
             }
 
-            .email .header, .email footer {
+            .email .header, .email .footer {
                 font-size:  85%;
                 font-style: italic;
             }
@@ -64,12 +64,12 @@
                 margin-top: 0;
             }
 
-            .email footer {
+            .email .footer {
                 margin-top:    4rem;
                 margin-bottom: 4rem;
             }
 
-            .email footer div {
+            .email .footer div {
                 margin-top:    2rem;
                 margin-bottom: 2rem;
 
@@ -78,7 +78,7 @@
                 margin-right: auto;
             }
 
-            .email footer div.unsubscribe {
+            .email .footer div.unsubscribe {
                 text-align: center;
             }
 
@@ -108,7 +108,7 @@
             <div class="main">
                 {{ page.content | safe }}
             </div>
-            <footer>
+            <div class="footer">
                 <div class="address">
                     <p>This email was sent by me:</p>
                     <address>
@@ -128,7 +128,7 @@
                     </p>
                     <a href="{$unsubscribe}">Unsubscribe</a>
                 </div>
-            </footer>
+            </div>
         </div>
     </body>
 </html>
