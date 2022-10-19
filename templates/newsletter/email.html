@@ -35,22 +35,22 @@
                 display: none;
             }
 
-            .email main h3 {
+            .email .main h3 {
                 margin-top:    2rem;
                 margin-bottom: 1rem;
             }
 
-            .email main p {
+            .email .main p {
                 margin-top:    1rem;
                 margin-bottom: 0;
             }
 
-            .email main ol, .email main ul {
+            .email .main ol, .email .main ul {
                 margin-top:    0.5rem;
                 margin-bottom: 0;
             }
 
-            .email main strong.call-to-action {
+            .email .main strong.call-to-action {
                 display: block;
 
                 margin: 1rem auto;
@@ -60,7 +60,7 @@
                 background-color: #ffff80;
             }
 
-            .email main strong.call-to-action p {
+            .email .main strong.call-to-action p {
                 margin-top: 0;
             }
 
@@ -105,9 +105,9 @@
 
                 {% block header %}{% endblock %}
             </header>
-            <main>
+            <div class="main">
                 {{ page.content | safe }}
-            </main>
+            </div>
             <footer>
                 <div class="address">
                     <p>This email was sent by me:</p>
