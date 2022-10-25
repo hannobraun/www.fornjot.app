@@ -12,7 +12,6 @@ If you want to follow along Fornjot's progress, there are various ways to do tha
 Weekly release announcements:
 - [Blog](/blog) (also includes other articles)
 - [Rust Users forum](https://users.rust-lang.org/t/fornjot-code-first-cad-in-rust-weekly-release/71783)
-- [Reddit](https://www.reddit.com/user/hannobraun)
 
 Day-to-day development updates:
 - [Matrix channel]
