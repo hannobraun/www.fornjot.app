@@ -1,7 +1,6 @@
 +++
 title = "Weekly Release - UI Week"
-# TASK: Uncomment this date, once the announcement is ready to be published.
-# date = 2022-10-31
+date = 2022-10-31
 
 # Uncomment to generate the HTML for the email newsletter.
 # template = "newsletter/weekly-release.html"
