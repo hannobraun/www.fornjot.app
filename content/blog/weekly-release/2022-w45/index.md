@@ -61,7 +61,7 @@ Improvements to Fornjot components that are relevant to developers building on t
 
 Improvements that are relevant to developers working on Fornjot itself.
 
-- Update dependencies ([#1290], [#1291], [#1292], [#1293])
+- Update dependencies ([#1290], [#1291], [#1292], [#1293], [#1314], [#1315], [#1316], [#1318], [#1319])
 - Upgrade to Rust 1.65.0 ([#1306])
 - Make some clean-ups in internal `fj` code ([#1311])
 
@@ -88,6 +88,11 @@ Improvements that are relevant to developers working on Fornjot itself.
 [#1311]: https://github.com/hannobraun/Fornjot/pull/1311
 [#1312]: https://github.com/hannobraun/Fornjot/pull/1312
 [#1313]: https://github.com/hannobraun/Fornjot/pull/1313
+[#1314]: https://github.com/hannobraun/Fornjot/pull/1314
+[#1315]: https://github.com/hannobraun/Fornjot/pull/1315
+[#1316]: https://github.com/hannobraun/Fornjot/pull/1316
+[#1318]: https://github.com/hannobraun/Fornjot/pull/1318
+[#1319]: https://github.com/hannobraun/Fornjot/pull/1319
 
 [@zthompson47]: https://github.com/zthompson47
 
