@@ -15,13 +15,13 @@ The long-term viability of Fornjot depends on people like you sponsoring its dev
 
 ### Why sponsor?
 
-I'm spending a lot of my time working on Fornjot. For years on evenings and weekends, now as my main job. I am relying on sponsorship income to make this happen. Without sponsors, I wouldn't be able to keep it up.
+I spend a lot of my time working on Fornjot. For years on evenings and weekends, now as my main job. I am relying on sponsorship income to make this happen. Without sponsors, I wouldn't be able to keep it up.
 
 Running an open source project is a lot of work. Besides writing code, I spend a lot of time on other activities:
 
 - Planning, and opening issues to document these plans. This is necessary to help other developers get involved, and to let users know where the project is going.
 - Reviewing and merging pull requests. Fornjot can only thrive if others help out. Enabling them to do that is a priority.
-- Marketing, like working on this website and writing the Weekly Dev Log. Only if more people know about Fornjot, can it attract the developers and sponsors required to make it sustainable long-term.
+- Marketing, like working on this website and publishing regular updates. Only if more people know about Fornjot, can it attract the developers and sponsors required to make it sustainable long-term.
 
 I am in the fortunate position, than I can cover all my costs from sponsorship income, and I am very thankful to everyone who contributes! But my income is nowhere near what it could be, if I took a job as a software developer in some large company. And I rely on very few sponsors, which is risky.
 
@@ -30,7 +30,7 @@ By pitching in, you make my income more stable, as well as help increase it to a
 
 ### What happens with the money?
 
-Part of it covers my business costs, like hosting, my internet connection, the computer I work on, etc. The rest of it goes to me as a salary. In the future, I also want to re-invest some money into Fornjot, by hiring others to help me out. So far, I don't make enough to feel comfortable doing that.
+Part of it covers my business costs, like hosting, my internet connection, the computer I work on, etc. The rest of it goes to me as a salary. I also want to re-invest into Fornjot, by hiring others to help me out. So far, I don't make enough to feel comfortable doing that.
 
 Since I am the maintainer of Fornjot, and at this point am still doing the large majority of the development work, supporting me directly is the best way to help the project.
 
@@ -46,14 +46,14 @@ If you would like to sponsor me on another platform, please also let me know. I 
 
 ### How much does it costs?
 
-The minimum contribution is $2, one-time or monthly. You can choose one of the monthly tiers (see [my GitHub Sponsors profile][GitHub Sponsors]), or enter an arbitrary amount. Monthly sponsorships can be cancelled any time.
+The minimum contribution is $2, one-time or monthly. You can choose one of the tiers (see [my GitHub Sponsors profile][GitHub Sponsors]), or enter an arbitrary amount. Monthly sponsorships can be cancelled any time.
 
 Even it you don't have much to give, every little bit helps. Small amounts add up to a meaningful contribution to my living costs!
 
 
 ### What do I get in return?
 
-All the monthly sponsorship tiers come with rewards. Every sponsor receives my monthly update, where I talk about how the project is going, including behind-the-scenes stuff that I don't publish anywhere else. Higher tiers come with more rewards, like your name or logo on the website and in the Weekly Dev Log.
+All sponsorship tiers come with rewards. Every sponsor receives my monthly behind-the-scenes update, where I talk about how the project is going. Higher tiers come with more rewards, like your name or logo on the website, in the weekly release announcements, or the progress reports.
 
 Check out [my GitHub Sponsors profile][GitHub Sponsors] for all the details.
 

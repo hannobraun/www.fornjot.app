@@ -90,10 +90,6 @@ body {
                     }
                 }
 
-                li a.emphasize {
-                    background-color: $color-emphasis-heavy;
-                }
-
                 li:not(:last-child)::after {
                     // That `\A` here, which inserts a line break on the left
                     // side of the middle dot, is a really dirty trick.
@@ -332,4 +328,8 @@ ul.toc {
     @include box($color-emphasis-light, $margin-default);
 
     list-style-type: none;
+}
+
+.highlight {
+    background-color: $color-emphasis-heavy;
 }
