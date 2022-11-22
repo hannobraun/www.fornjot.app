@@ -5,6 +5,7 @@ $color-links: #0880e8;
 
 $color-emphasis-heavy: #ffff80;
 $color-emphasis-light: #f8f8f8;
+$color-button: #8080FF;
 
 $width-content: 42rem;
 $width-narrow: 30rem;
@@ -332,4 +333,30 @@ ul.toc {
 
 .highlight {
     background-color: $color-emphasis-heavy;
+}
+
+.funding-cta {
+    padding: $margin-default;
+    margin: $margin-default;
+
+    .buttons {
+        margin-left: auto;
+        margin-right: auto;
+
+        width: fit-content;
+
+        a {
+            @include box($color-button, $margin-narrow, $margin-narrow);
+
+            margin-left: $margin-narrow;
+            margin-right: $margin-narrow;
+
+            color: white;
+        }
+    }
+
+    p {
+        font-size: x-small;
+        text-align: center;
+    }
 }

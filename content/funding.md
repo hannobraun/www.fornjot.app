@@ -2,6 +2,14 @@
 title = "Funding"
 +++
 
+Fornjot is an actively developed project with one full-time developer working on it. **To make that level of effort sustainable, Fornjot needs your help!**
+
+If you want to see the goal of creating a next-generation, code-first CAD application realized, please consider supporting this effort. The long-term viability of Fornjot depends on people like you sponsoring its development. Whether you are willing to give a lot, or you can just spare a little, you can help!
+
+{{ funding_cta() }}
+
+---
+
 Hey, it's me, [Hanno Braun](https://github.com/hannobraun), Fornjot's creator, maintainer, and main developer. I am accepting sponsorships to help me push the project forward. **Thank you for considering to help out!**
 
 The long-term viability of Fornjot depends on people like you sponsoring its development. Whether you are willing to give a lot, or you can just spare a little, [you can help][GitHub Sponsors]. Even small contributions add up!
@@ -63,6 +71,8 @@ Check out [my GitHub Sponsors profile][GitHub Sponsors] for all the details.
         To support me, head over to my <a href="https://github.com/sponsors/hannobraun">GitHub Sponsors profile</a>!
     </p>
 </strong>
+
+{{ funding_cta() }}
 
 
 [GitHub Sponsors]: https://github.com/sponsors/hannobraun
