@@ -1,7 +1,6 @@
 +++
 title = "Weekly Release - Experimentation"
-# TASK: Uncomment this date, once the announcement is ready to be published.
-# date = 2022-11-28
+date = 2022-11-28
 
 # Uncomment to generate the HTML for the email newsletter.
 # template = "newsletter/weekly-release.html"
@@ -85,4 +84,3 @@ Improvements that are relevant to developers working on Fornjot itself.
 [#1394]: https://github.com/hannobraun/Fornjot/pull/1394
 [#1395]: https://github.com/hannobraun/Fornjot/pull/1395
 [#1396]: https://github.com/hannobraun/Fornjot/pull/1396
-
