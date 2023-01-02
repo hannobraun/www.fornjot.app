@@ -1,7 +1,6 @@
 +++
 title = "Weekly Release - Quick and Painless"
-# TASK: Uncomment this date, once the announcement is ready to be published.
-# date = 2023-01-02
+date = 2023-01-02
 
 # Uncomment to generate the HTML for the email newsletter.
 # template = "newsletter/weekly-release.html"
@@ -62,4 +61,3 @@ Improvements that are relevant to developers working on Fornjot itself.
 [#1468]: https://github.com/hannobraun/Fornjot/pull/1468
 [#1469]: https://github.com/hannobraun/Fornjot/pull/1469
 [#1470]: https://github.com/hannobraun/Fornjot/pull/1470
-
