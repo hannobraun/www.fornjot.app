@@ -66,6 +66,6 @@ This is not an exhaustive list. Please [check out the feature wishlist](https://
 
 <div class="call-to-action">
     <p>
-        <strong>Fornjot is an ambitious project.</strong> How much of that ambition can be realized depends on how sustainable the project can become. If you can, please consider helping out, by <a href="https://github.com/hannobraun/Fornjot">contributing to the project</a>, or by <a href="/sponsor">becoming a sponsor</a>.
+        <strong>Fornjot is an ambitious project.</strong> How much of that ambition can be realized depends on how sustainable the project can become. If you can, please consider helping out, by <a href="https://github.com/hannobraun/Fornjot">contributing to the project</a>, or by <a href="/funding/">becoming a sponsor</a>.
     </p>
 </div>

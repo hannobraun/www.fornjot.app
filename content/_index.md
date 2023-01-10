@@ -20,7 +20,7 @@ Want to learn more? Here are some resources you might be interested in:
 
 - [Why the world needs another CAD program](/blog/the-world-needs-another-cad-program/)
 - [The advantages of a code-first approach to CAD](/blog/code-cad-advantages/)
-- [Fornjot's current development priorities](/blog/straight-edges-flat-faces-simple-sketches-full-csg/)
+- [Fornjot's development roadmap](/roadmap/)
 
 
 ### Sponsors
