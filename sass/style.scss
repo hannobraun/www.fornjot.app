@@ -125,7 +125,7 @@ body {
         }
 
         aside {
-            @include box($color-emphasis-heavy, $margin-default);
+            @include box($color-emphasis-light, $margin-default);
 
             max-width: fit-content;
             font-style: italic;
