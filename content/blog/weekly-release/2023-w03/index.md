@@ -1,7 +1,6 @@
 +++
 title = "Weekly Release - Slow Progress"
-# TASK: Uncomment this date, once the announcement is ready to be published.
-# date = 2023-01-16
+date = 2023-01-16
 
 # Uncomment to generate the HTML for the email newsletter.
 # template = "newsletter/weekly-release.html"
