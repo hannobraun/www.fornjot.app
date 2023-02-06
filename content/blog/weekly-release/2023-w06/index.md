@@ -1,7 +1,6 @@
 +++
 title = "Weekly Release - Ostensibly Quiet"
-# TASK: Uncomment this date, once the announcement is ready to be published.
-# date = 2023-02-06
+date = 2023-02-06
 
 # Uncomment to generate the HTML for the email newsletter.
 # template = "newsletter/weekly-release.html"
