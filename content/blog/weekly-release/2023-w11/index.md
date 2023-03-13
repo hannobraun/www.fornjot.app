@@ -1,8 +1,7 @@
 +++
-# TASK: Replace the calendar week with a descriptive title.
 title = "Weekly Release - Thoroughly Mediocre"
 # TASK: Uncomment this date, once the announcement is ready to be published.
-# date = 2023-03-13
+date = 2023-03-13
 
 # Uncomment to generate the HTML for the email newsletter.
 # template = "newsletter/weekly-release.html"
