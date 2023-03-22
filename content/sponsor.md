@@ -1,5 +1,5 @@
 +++
-title = "Funding"
+title = "Sponsor"
 +++
 
 Fornjot is an actively developed open source project with one full-time developer working on it. **To make that level of effort sustainable, Fornjot needs your help!**
