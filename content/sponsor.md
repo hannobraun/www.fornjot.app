@@ -6,7 +6,7 @@ Fornjot is an actively developed open source project with one full-time develope
 
 If you want to see the goal of creating a next-generation, code-first CAD application realized, please consider supporting this effort. The long-term viability of Fornjot depends on people like you sponsoring its development. Whether you are willing to give a lot, or you can just spare a little, you can help!
 
-{{ funding_cta() }}
+{{ sponsor_cta() }}
 
 ---
 
@@ -64,7 +64,7 @@ All sponsorship tiers on [GitHub Sponsors] come with rewards. Every sponsor rece
 If you donated cryptocurrency, feel free to [contact me to claim a reward](mailto:hanno@braun-odw.eu).
 
 
-{{ funding_cta() }}
+{{ sponsor_cta() }}
 
 
 [GitHub Sponsors]: https://github.com/sponsors/hannobraun
