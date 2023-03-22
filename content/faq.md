@@ -46,7 +46,7 @@ Creating a CAD program (especially one with a custom kernel) is already a huge a
 So which use cases will Fornjot support? Well, that's going to depend on whether developers will be available to do the required work:
 
 - *Contributions:* Fornjot is an open source project that is open to everyone. If a horde of developer who are all interested in civil engineering, for example, start contributing to the project, then Fornjot might become very usable in that area. If that doesn't happen, it might not.
-- *Funding:* If there is demand from a specific target market, and that target market is willing and able to [provide funding](/funding), then development effort can be allocated accordingly.
+- *Funding:* If there is demand from a specific target market, and that target market is willing and able to [provide funding](/sponsor), then development effort can be allocated accordingly.
 
 So we really can't know right now. However, there are a few things that we do know:
 
