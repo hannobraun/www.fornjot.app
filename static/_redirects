@@ -4,7 +4,7 @@
 /blog/last-month-in-fornjot/ /blog/ 308
 
 # Moved pages
-/sponsor /funding/ 308
-/sponsor/ /funding/ 308
+/funding /sponsor/ 308
+/funding/ /sponsor/ 308
 /blog/weekly-dev-log-for-2022-w03/ /blog/weekly-dev-log/2022-w03/ 308
 /blog/fornjot-0-5-0/ /blog/fornjot-0.5.0/ 308
