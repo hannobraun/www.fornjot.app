@@ -4,7 +4,11 @@
 /blog/last-month-in-fornjot/ /blog/ 308
 
 # Moved pages
-/funding /sponsor/ 308
-/funding/ /sponsor/ 308
 /blog/weekly-dev-log-for-2022-w03/ /blog/weekly-dev-log/2022-w03/ 308
 /blog/fornjot-0-5-0/ /blog/fornjot-0.5.0/ 308
+
+# Deleted pages
+/funding https://github.com/sponsors/hannobraun 308
+/funding/ https://github.com/sponsors/hannobraun 308
+/sponsor https://github.com/sponsors/hannobraun 308
+/sponsor/ https://github.com/sponsors/hannobraun 308
