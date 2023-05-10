@@ -77,4 +77,4 @@ I think there's room for something different. A CAD program that:
 - provides a well-rounded feature set;
 - and a selection of different modeling languages.
 
-This is what I'm trying to do with Fornjot. If you think this is a worthwhile endeavor, [please consider supporting me](https://www.fornjot.app/sponsor/).
+This is what I'm trying to do with Fornjot. If you think this is a worthwhile endeavor, [please consider supporting me](https://github.com/sponsors/hannobraun).

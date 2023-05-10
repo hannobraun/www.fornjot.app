@@ -112,7 +112,7 @@ Citing from the [home page](/), the goal of this project is to create a CAD appl
 - provides a **well-rounded feature set**;
 - and support for **different modeling languages**.
 
-**If this vision resonates with you, please consider supporting the project.** Join the [community](/community), [contribute](https://github.com/hannobraun/Fornjot/blob/main/CONTRIBUTING.md) to the project, or help out by [sponsoring me](/sponsor).
+**If this vision resonates with you, please consider supporting the project.** Join the [community](/community), [contribute](https://github.com/hannobraun/Fornjot/blob/main/CONTRIBUTING.md) to the project, or help out by [sponsoring me](https://github.com/sponsors/hannobraun).
 
 
 [@ArshErgon]: https://github.com/ArshErgon
