@@ -25,7 +25,7 @@ So what does that change, in practice? Fornjot is already a code-first CAD appli
 
 In the future, Fornjot models will just be Rust code that uses the raw kernel API. Since the Fornjot kernel has been the main focus of my efforts so far, this isn't going to change much in terms of capability. In fact, it will provide models with much more powerful capabilities than they currently have. But it is a large departure in terms of future ambitions.
 
-We are nearing a point were the kernel could be considered "good enough" for very basic models. From there, my focus would have shifted to the application. To making it usable in more scenarios (like within browsers), provide a more interactive editing experience, provide better insight into what the kernel is doing (for debugging purposes). None of that is going to happen now.
+We are nearing a point where the kernel could be considered "good enough" for very basic models. From there, my focus would have shifted to the application. To making it usable in more scenarios (like within browsers), provide a more interactive editing experience, provide better insight into what the kernel is doing (for debugging purposes). None of that is going to happen now.
 
 This allows me to keep focusing my (now much more limited) resources on kernel capabilities, giving us a realistic chance at soon having a tool that will be useful beyond just toy examples.
 
