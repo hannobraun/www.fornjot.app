@@ -4,7 +4,7 @@ date = "2023-05-15"
 +++
 
 <aside>
-    A draft of this post went out to my sponsors last week. If you are a sponsor and didn't receive this, make sure you've opted in to receive my messages. Go to <a href="https://github.com/sponsors/hannobraun">my profile</a>, click <code>Manage</code> in the upper-right, make sure to check <code>Receive email updates from hannobraun</code>, then click <code>Update sponsorship</code>.
+    A draft of this post went out to my sponsors last week. If you are a sponsor and didn't receive this, make sure you've opted in to receive my messages on GitHub Sponsors. Go to <a href="https://github.com/sponsors/hannobraun">my profile</a>, click <code>Manage</code> in the upper-right, make sure to check <code>Receive email updates from hannobraun</code>, then click <code>Update sponsorship</code>.
 </aside>
 
 I've been working on Fornjot for a long time. For a few years on the side, as a hobby. Then, since the beginning of 2022 (over a year now!), as my primary (and only) job.
