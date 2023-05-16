@@ -1,26 +1,7 @@
 +++
 +++
 
-Fornjot is an **early-stage project** to create a **next-generation, code-first CAD application**.
-
-![Screenshot of Fornjot](screenshot.png)
-
-The **goal of this project** is to create a CAD application that:
-
-- uses a **code-first** approach;
-- is **open source**;
-- is broadly available, with **support for all major platforms**;
-- is based on a **new b-rep CAD kernel**, written in Rust;
-- provides a **well-rounded feature set**;
-- and support for **different modeling languages**.
-
-This goal is not realized yet. Far from it, actually! But Fornjot is slowly getting better, step by step.
-
-Want to learn more? Here are some resources you might be interested in:
-
-- [Why the world needs another CAD program](/blog/the-world-needs-another-cad-program/)
-- [The advantages of a code-first approach to CAD](/blog/code-cad-advantages/)
-- [Fornjot's development roadmap](/roadmap/)
+Fornjot is an **early-stage project** to create a **boundary representation (b-rep) CAD kernel**, written in the Rust programming language.
 
 
 ### Sponsors
