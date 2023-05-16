@@ -9,9 +9,8 @@ If you are interested in Fornjot, consider joining the community. We'd love to h
 
 If you want to follow along Fornjot's progress, there are various ways to do that.
 
-Weekly release announcements:
+Project news:
 - [Blog](/blog) (also includes other articles)
-- [Rust Users forum](https://users.rust-lang.org/t/fornjot-code-first-cad-in-rust-weekly-release/71783)
 
 Day-to-day development updates:
 - [Matrix channel]
@@ -28,15 +27,15 @@ Finally, there is the email newsletter, which receives mostly the same updates a
 The following venues are best-suited for questions, feedback, or general discussions:
 
 - [Matrix channel]
-- [GitHub Discussions](https://github.com/hannobraun/Fornjot/discussions)
+- [GitHub Discussions](https://github.com/hannobraun/fornjot/discussions)
 
 
 ### Bugs, Feature Requests
 
 If you found a bug or have a specific feature request, please use issues on GitHub:
 
-- [List of open issues](https://github.com/hannobraun/Fornjot/issues)
-- [Open a new issue](https://github.com/hannobraun/Fornjot/issues/new)
+- [List of open issues](https://github.com/hannobraun/fornjot/issues)
+- [Open a new issue](https://github.com/hannobraun/fornjot/issues/new)
 
 Feel free to check existing issues and add your voice there, if you find one that fits. But if you are unsure or don't have the time for that, don't let that stop you. We'd rather have duplicate issues than not hear about a bug at all.
 
@@ -45,10 +44,10 @@ Feel free to check existing issues and add your voice there, if you find one tha
 
 To join the Fornjot project as a developer, please fork one of the GitHub repositories and submit a pull request:
 
-- [Main Fornjot repository](https://github.com/hannobraun/Fornjot)
+- [Main Fornjot repository](https://github.com/hannobraun/fornjot)
 - [Website repository](https://github.com/hannobraun/www.fornjot.app)
 
-If you need some guidance, feel free to check out the [contribution guide](https://github.com/hannobraun/Fornjot/blob/main/CONTRIBUTING.md).
+If you need some guidance, feel free to check out the [contribution guide](https://github.com/hannobraun/fornjot/blob/main/CONTRIBUTING.md).
 
 
 [Matrix channel]: https://matrix.to/#/#fornjot:braun-odw.eu
