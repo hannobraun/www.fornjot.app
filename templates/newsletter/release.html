@@ -1,0 +1,7 @@
+{% extends "newsletter/email.html" %}
+
+{% block header %}
+    <p>
+        This is the announcement for a new release of Fornjot. If you want to read this in a browser or share it with a friend, please check out <a href="{{ page.permalink | safe }}">the version on the website</a>.
+    </p>
+{% endblock %}
