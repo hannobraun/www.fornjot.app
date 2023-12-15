@@ -155,7 +155,7 @@ I've been focused on new features for a while, and this release is the culminati
 
 The planning process for this has started. We'll have to see where it takes us, but [#2116](https://github.com/hannobraun/fornjot/issues/2116), [#2117](https://github.com/hannobraun/fornjot/issues/2117), and [#2118](https://github.com/hannobraun/fornjot/issues/2118), are probably what will keep me busy for a while.
 
-However, this is not all there is to do! There are [open issue](https://github.com/hannobraun/fornjot/issues) and a [feature wishlist](https://github.com/hannobraun/fornjot/discussions/146) with many more work items, and **help is always appreciated**. So if you see anything there that appeals to you, or have an idea of your own, please feel free to jump in and help out!
+However, this is not all there is to do! There are [open issues](https://github.com/hannobraun/fornjot/issues) and a [feature wishlist](https://github.com/hannobraun/fornjot/discussions/146) with many more work items, and **help is always appreciated**. So if you see anything there that appeals to you, or have an idea of your own, please feel free to jump in and help out!
 
 
 ### Sponsors
