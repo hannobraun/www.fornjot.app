@@ -1,7 +1,6 @@
 +++
 title = "Fornjot 0.48.0"
-# TASK: Uncomment this date, once the announcement is ready to be published.
-# date = 2023-12-15
+date = 2023-12-15
 
 # Uncomment to generate the HTML for the email newsletter.
 # template = "newsletter/release.html"
