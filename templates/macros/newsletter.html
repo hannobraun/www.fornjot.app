@@ -1,30 +1,17 @@
 {% macro form(emphasis, description) %}
-    <form
-        class="newsletter {{ emphasis }}"
-        method="POST"
-        action="https://static.mailerlite.com/webforms/submit/b3p2x0"
-        data-code="b3p2x0"
-        target="_blank">
+    <iframe
+        data-w-type="embedded"
+        frameborder="0"
+        scrolling="no"
+        marginheight="0"
+        marginwidth="0"
+        src="https://sxozn.mjt.lu/wgt/sxozn/xw52/form?c=f308d495"
+        width="100%"
+        style="height: 0;">
+    </iframe>
 
-        <h2>Newsletter</h2>
-        {% if description %}
-            <p>
-                Want to stay up-to-date with Fornjot? Sign up to not miss any blog posts, or the occasional newsletter-only message!
-            </p>
-        {% endif %}
-
-        <input type="hidden" name="ml-submit" value="1" />
-        <input type="hidden" name="anticsrf" value="true" />
-
-        <input
-            type="email"
-            name="fields[email]"
-            required
-            placeholder="your@email.com" />
-        <div class="submit">
-            <input
-                type="submit"
-                value="Sign up" />
-        </div>
-    </form>
+    <script
+        type="text/javascript"
+        src="https://app.mailjet.com/pas-nc-embedded-v1.js">
+    </script>
 {% endmacro %}
