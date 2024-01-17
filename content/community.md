@@ -50,4 +50,4 @@ To join the Fornjot project as a developer, please fork one of the GitHub reposi
 If you need some guidance, feel free to check out the [contribution guide](https://github.com/hannobraun/fornjot/blob/main/CONTRIBUTING.md).
 
 
-[Matrix channel]: https://matrix.to/#/#fornjot:braun-odw.eu
+[Matrix channel]: https://matrix.to/#/#fornjot:pub.solar
