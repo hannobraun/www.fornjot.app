@@ -14,7 +14,7 @@ It's been a good week for Fornjot! I made progress with the cleanup of the objec
 
 But honestly, the most significant change this weeks wasn't anything that happened with the Fornjot code. It was a change in my thinking, after watching [a talk](https://www.youtube.com/watch?v=8Ab3ArE8W3s) that I was must have been primed for, having thought about these topics for the last 10 years.
 
-I'm not going to say any more than that  here, as I'm still in the middle of sorting out what all of it means for Fornjot. If you're interested in hearing more, why not [join the Fornjot Matrix channel](https://matrix.to/#/#fornjot:braun-odw.eu)? Not only have we been talking about the topic there, it's also a good place for day-to-day updates on Fornjot's development.
+I'm not going to say any more than that  here, as I'm still in the middle of sorting out what all of it means for Fornjot. If you're interested in hearing more, why not [join the Fornjot Matrix channel](https://matrix.to/#/#fornjot:pub.solar)? Not only have we been talking about the topic there, it's also a good place for day-to-day updates on Fornjot's development.
 
 
 ### Sponsors
