@@ -34,7 +34,7 @@ in? Update your sponsorship over at GitHub, and make sure you check
 in your email client.
 
 If you still haven't received an update,
-[please contact me](mailto:hanno@braun-odw.eu). I'm happy to send you a copy
+[please contact me](mailto:hello@hannobraun.com). I'm happy to send you a copy
 directly.
 
 I'm sorry for any inconvenience! I want to stay in touch with my sponsors, so if

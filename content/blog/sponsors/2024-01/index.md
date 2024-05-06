@@ -25,6 +25,6 @@ I've been sending an update to my sponsors every month since February 2022. Unfo
 
 If you are a sponsor and haven't received those updates, maybe you are not opted in? Update your sponsorship over at GitHub, and make sure you check `Receive email updates from hannobraun`. Also make sure to check the spam folder in your email client.
 
-If you still haven't received an update, [please contact me](mailto:hanno@braun-odw.eu). I'm happy to send you a copy directly.
+If you still haven't received an update, [please contact me](mailto:hello@hannobraun.com). I'm happy to send you a copy directly.
 
 I'm sorry for any inconvenience! I want to stay in touch with my sponsors, so if anything isn't working, please don't hesitate to reach out!
