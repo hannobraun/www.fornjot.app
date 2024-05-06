@@ -27,7 +27,7 @@ Switching between two systems regularly is a pain, and inefficient. If you don't
 
 And listen, I'm not going to argue that Linux is "better". But it is *better for me*, and many other people as well. The software I usually run tends to work better on Linux than it does on Windows (or macOS). And I understand how it works, at least well enough to fix the problems I face.
 
-In any case, this takes away most of the commercial CAD programs, except for [OnShape](https://www.onshape.com/) and a bunch of others that don't seem suitable to the kind of work that I'd like to do. (If you know of another option that I should take a look at, [please let me know](mailto:hanno@braun-odw.eu).)
+In any case, this takes away most of the commercial CAD programs, except for [OnShape](https://www.onshape.com/) and a bunch of others that don't seem suitable to the kind of work that I'd like to do. (If you know of another option that I should take a look at, [please let me know](mailto:hello@hannobraun.com).)
 
 
 ### 2. It's too expensive.
