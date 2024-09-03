@@ -1,6 +1,6 @@
 +++
 title = "Sponsor Update - 2024-08"
-date = 2024-07-05
+date = 2024-08-05
 
 # Uncomment to generate the HTML for the email newsletter.
 # template = "newsletter/email.html"
