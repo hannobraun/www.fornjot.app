@@ -14,6 +14,7 @@ Project news:
 
 Day-to-day development updates:
 - [Matrix channel]
+- [Bluesky](https://bsky.app/profile/hannobraun.com)
 - [Mastodon](https://fosstodon.org/@hannobraun)
 - [Twitter](https://twitter.com/hannobraun)
 
