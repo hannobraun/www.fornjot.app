@@ -2,7 +2,7 @@ title    = "Fornjot"
 base_url = "https://www.fornjot.app/"
 
 compile_sass       = true
-generate_feed      = true
+generate_feeds     = true
 build_search_index = false
 
 [slugify]
