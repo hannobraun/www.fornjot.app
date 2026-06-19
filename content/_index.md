@@ -1,15 +1,6 @@
 +++
 +++
 
-Fornjot is an **early-stage CAD kernel**, using **boundary representation (b-rep)**, written in the Rust programming language.
+Fornjot was an early-stage CAD kernel, using boundary representation (b-rep), written in the Rust programming language. **The project is now over, and its goals were not reached.**
 
-As a CAD kernel, the project's main goal is to provide **a solid foundation for developers to build on top of**, whether for special purpose tooling, third-party libraries for extending Fornjot's feature set, or full-featured CAD applications.
-
-In doing so, Fornjot follows these principles:
-
-- Focus on **mechanical CAD applications**, like 3D printing, machining, woodworking; over other use cases such as architecture or electronics.
-- Favor **reliability over features**. Anything you can do should either work as expected, or result in a clear and actionable error.
-- Maintain **a friendly API for directly defining models** in Rust. This means code-first CAD modeling (or Code-CAD) is natively supported.
-- Support **code-first CAD modeling in other languages**, by enabling third-party APIs.
-
-Fornjot is still in development and doesn't always live up to these ambitions. None the less, these are the priorities the project follows.
+If you want to learn more, the [GitHub repository](https://github.com/hannobraun/fornjot) and the [blog](/blog) are the best places to start.
